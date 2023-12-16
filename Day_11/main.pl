@@ -23,6 +23,10 @@ sub dump_array {
 }
 
 sub parse_input {
+    # The below can be done with the following one liner:
+    # my @lines = map { [ split '', $_ ] } map { chomp; $_ } <HANDLE>;
+    # However, I wanted to break things up to understand them better.
+
     my ($filename) = @_;
     open(HANDLE, '<', $filename) or die "Could not open file: $!";
     my @lines = <HANDLE>;
@@ -31,7 +35,10 @@ sub parse_input {
     # Remove new lines. Note that this mutates @lines
     map { chomp; $_ } @lines;
 
-    # Split lines into arrays of characters.
+    # These two lines are equivalent. The square bracket notation is a more concise way to return
+    # a reference to the returned array.
+    # @lines = map { my @sp = split('', $_); \@sp } @lines;
+    # Split lines into arrays
     @lines = map { [ split('', $_) ] } @lines;
     return \@lines;
 }
@@ -50,24 +57,17 @@ sub transpose {
 }
 
 sub expand_universe {
-    # REFHELL: Grab the input variable here. Be careful, we expect a reference so we must
-    # unpack into a reference
     my ($universe_ref) = @_;
-    # REFHELL: Define a new array to hold the expanded universe. Now were dealing with
-    # arrays AND references.
     my @new_rows;
     # We have to dereference universe_ref first. But then each $row will be a reference to another
     # array
-    # REFHELL: To iterate over a reference I must dereference. But rememeber, each row is a
-    # reference to another array and thus a scalar.
     foreach my $row (@$universe_ref) {
         push @new_rows, $row;
-        # REFHELL: Since $row is a reference, dereference it. Do a comparison by using a scalar
-        # context. Then push the reference to our array
+        # TODO: ???
         push @new_rows, $row if scalar(grep { $_ eq '.' } @$row) == scalar(@$row);
     }
 
-    # REFHELL: Pass a reference to our array to the transpose sub. But now we get a reference back.
+    # my @transposed = map { [ map { $_->[$_] } @new_rows ] } 0..$#{$new_rows[0]};
     my $transposed = transpose(\@new_rows);
     my @new_cols;
     foreach my $col (@$transposed) {
@@ -75,7 +75,7 @@ sub expand_universe {
         push @new_cols, $col if scalar(grep { $_ eq '.' } @$col) == scalar(@$col);
     }
 
-    # REFHELL: Return a reference.
+    # my @result = map { [ map { $_->[$_] } @new_cols ] } 0..$#new_cols;
     return transpose(\@new_cols);
 }
 
@@ -112,3 +112,5 @@ sub answer_part1 {
 
 assert_equal(answer_part1('test_input.txt'), 374);
 assert_equal(answer_part1('real_input.txt'), 9556896);
+
+# N.B. I didn't convert part 2 to Perl. I'd had enough by this point!

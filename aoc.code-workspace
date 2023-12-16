@@ -1,0 +1,55 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"name": "Root of Workspace"
+		},
+		{
+			"path": "Day_1",
+		},
+		{
+			"path": "Day_2",
+		},
+		{
+			"path": "Day_3",
+		},
+		{
+			"path": "Day_4"
+		},
+		{
+			"path": "Day_5",
+			"name": "Day_5: PowerShell"
+		},
+		{
+			"path": "Day_6",
+		},
+		{
+			"path": "Day_7",
+		},
+		{
+			"path": "Day_8",
+		},
+		{
+			"path": "Day_9",
+		},
+		{
+			"path": "Day_10",
+			"name": "Day_10: Ruby"
+		},
+		{
+			"path": "Day_11",
+		},
+		{
+			"path": "Day_12",
+		},
+		{
+			"path": "Day_13",
+		}
+	],
+	"settings": {
+		"workbench.editor.labelFormat": "medium"
+	},
+	"extensions": {
+		"recommendations": []
+	}
+}

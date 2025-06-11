@@ -1,0 +1,2529 @@
+
+<!DOCTYPE html>
+<script type="text/javascript">
+var enableAccessControl =false;
+function checkAccessControl() {
+  if (enableAccessControl && window.sessionStorage.getItem('is_logon')!=1) {
+    window.location.replace("/general_index.aspx?lang=en");
+    return true;
+  }
+  return false;
+}
+if ( location.href.indexOf('general_index.aspx')<0 ) {
+  checkAccessControl();
+}
+</script>
+
+
+<html>
+<head>
+    <title>HKJC Horse Race Betting Limited</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=1024, user-scalable=1">
+<meta name="keywords" content="Racing">
+<meta name="description" content="Racing details">
+
+    <script src="/info/include/js/ua-parser.min.js"></script>
+<script type="text/javascript">
+	function browserCheck() {
+		"use strict";
+		try { eval("var foo = (x)=>x+1"); }
+		catch (e) { return false; }
+		return true;
+	}
+
+	var UNSUPPORTED_BROWSER = 'IE|IEMobile';
+	var UNSUPPORTED_BROWSER_REDIRECT = "https://is.hkjc.com/jcbw/SplashScn/legacy/mass/{0}.asp".replace("{0}", window.location.href.indexOf("lang=en")>=0 ? "en": "ch");
+	var uaParser = new UAParser();
+	if ( window.location.href.indexOf("b=1")<0 ) {
+		if ( !browserCheck() || UNSUPPORTED_BROWSER.indexOf(uaParser.getBrowser().name)>=0 ) {
+			window.location.href = UNSUPPORTED_BROWSER_REDIRECT;
+		}
+	}
+</script>
+<script type="text/javascript" src="/common/VisitorAPI.js?CV=L4.06R0c"></script>
+<script async type="text/javascript" id="_cls_detector" >
+  var enableGlassBox = false;
+  var glassBoxSrc = "https://cdn.gbqofs.com/hkjc/ew/p/detector-dom.min.js";
+  var glassBoxClsConfig = "reportURI=https://report.hkjc.glassboxdigital.io/glassbox/reporting/e74269a6-041c-2449-6829-8206c4437429/cls_report";
+  try { enableGlassBox &= !WAGdpr.isEU(); } catch {}
+
+  if ( enableGlassBox ) {
+    var s = document.createElement( 'script' );
+    s.setAttribute( 'src', glassBoxSrc );
+    s.setAttribute( 'data-clsconfig', glassBoxClsConfig );
+    document.head.appendChild( s );
+  }
+</script>
+<link rel="shortcut icon" href="/favicon.ico?CV=L4.06R0c" type="image/x-icon">
+<link rel="apple-touch-icon" href="/ContentServer/jcbw/apple_touch_icons/icon_60x60.png?CV=L4.06R0c" />
+<link rel="apple-touch-icon" sizes="76x76" href="/ContentServer/jcbw/apple_touch_icons/icon_76x76.png?CV=L4.06R0c" />
+<link rel="apple-touch-icon" sizes="120x120"
+	href="/ContentServer/jcbw/apple_touch_icons/icon_120x120.png?CV=L4.06R0c" />
+<link rel="apple-touch-icon" sizes="152x152"
+	href="/ContentServer/jcbw/apple_touch_icons/icon_152x152.png?CV=L4.06R0c" />
+<link href="/racing/info/css/en/racing.css?CV=L4.06R0c" rel="stylesheet" type="text/css" id="mainCssFile">
+<link href="/info/include/css/jquery-ui.css?CV=L4.06R0c" rel="stylesheet" type="text/css">
+<link href="/info/include/css/info.css?CV=L4.06R0c" rel="stylesheet" type="text/css">
+<link href="/info/include/css/en/styles.css?CV=L4.06R0c" rel="stylesheet" type="text/css" id="rootStyleFile">
+<link href="/info/include/css/en/menu_styles.css?CV=L4.06R0c" rel="stylesheet" type="text/css"
+	id="menuStyleFile">
+<link href="/info/include/css/en/bet_main_home.css?CV=L4.06R0c" rel="stylesheet" type="text/css"
+	id="bMainStyleFile">
+<link href="/info/include/css/en/betslip.css?CV=L4.06R0c" rel="stylesheet" type="text/css">
+<link href="/info/include/css/en/betslip_button.css?CV=L4.06R0c" rel="stylesheet" type="text/css">
+<link href="/info/include/css/en/betslip_overlay.css?CV=L4.06R0c" rel="stylesheet" type="text/css">
+<link href="/info/include/css/en/betslip_eft.css?CV=L4.06R0c" rel="stylesheet" type="text/css">
+<link href="/contentserver/jcbw/jkc/c_jockey.css?CV=L4.06R0c" rel="stylesheet" type="text/css">
+<link href="/info/include/css/jquery.simplyscroll.css?CV=L4.06R0c" rel="stylesheet" type="text/css">
+<link type="text/css" rel="stylesheet" id="pdMenuCssFile" />
+<link type="text/css" rel="stylesheet" id="oddsMenuCssFile" />
+<style type="text/css" media="screen" id="containerHeight"></style>
+<script type="text/javascript" src="//txn.hkjc.com/BetSlipIB//js/siteId.js?CV=L4.06R0c"></script>
+<script type="text/javascript">
+	var SERVER_NAME = window.location.hostname;
+	var domainName = SERVER_NAME.substr(SERVER_NAME.indexOf(".") + 1);
+	document.domain = domainName;
+	var cacheVersion = '?CV=L4.06R0c';
+	var curProduct = 'racing';
+	var curPageId = window.location.pathname.toLowerCase().replace('/' + curProduct + '/', '').replace('.aspx', '')
+		.replace('/index', 'index');
+	var curLang = 'en';
+	var offsetTime = 0;
+	var isQRPortal = false;
+	var allowOddsPush = false;
+	var oddsPushIconDisplay = false;
+	var secMenuE = '/ContentServer/jcbw/cmc/userxml/sbdata_userMenuE.xml';
+	var secMenuC = '/ContentServer/jcbw/cmc/userxml/sbdata_userMenuC.xml';
+	var jcewURL0 = '//www.hkjc.com/home/{0}/index.asp';
+	var jcewURL1 = '//entertainment.hkjc.com/entertainment/{0}/index.aspx';
+	var jcewURL2 = '//racing.hkjc.com/racing/{0}/index.aspx';
+	var jcewURL3 = '//football.hkjc.com/football/{0}/index.aspx';
+	var jcewURL4 = '//member.hkjc.com/member/{0}/index.asp';
+	var jcewURL5 = '//charities.hkjc.com/charities/{0}/index.aspx';
+	var jcewURL6 = '//corporate.hkjc.com/corporate/{0}/index.aspx';
+	var info_top_enable = true;
+	var info_bottom_enable = true;
+	var isBannerAdEnable = true;
+	var isMobileSplashScreenEnable = false;
+	var mobileSplashScreenLink = '//is.hkjc.com/jcbw/SplashScn/mobile/js_ewin/Mass/en.asp';
+	var smartAppIOSEnable = false;
+	var smartAppIOSId = 'app-id=432462569';
+	var smartAppAOSEnable = false;
+	var smartAppAOSUrl = 'intent://s.hkjc.com/apphome#Intent;scheme=hkjc;package=com.hkjc.bet;S.browser_fallback_url=https://is.hkjc.com/mbs/site/en/android_download.asp?b_cid=ISLDSPE_1718ISBW_BWH_ANDROID;end';
+
+	var bsUsePopup = true;
+
+	var url_regonline = '//wcip.hkjc.com/registerbettingservice.aspx?UIC=en-US&EP=BS';
+	var url_applybet = '//special.hkjc.com/infomenu/en/register/applybet.asp';
+	var url_cannotlogin = '//wcip.hkjc.com/inputaccoremail.aspx?UIC=en-US&EP=BS';
+	var url_chg_web_pass = '//wcip.hkjc.com/authbetaccCSSP.aspx?language=en-us&target=pw';
+	var url_chg_sec_question = '//wcip.hkjc.com/authbetaccCSSP.aspx?language=en-us&target=ekba';
+	var url_chg_web_profile = '//txn.hkjc.com/BetSlipIB/CsspRedirect.aspx?lang=en';
+	var url_associate_account = '//wcip.hkjc.com/registerbettingservice.aspx?UIC=en-US&EP=BS';
+	var url_ewallet_upgrade = '//wcip.hkjc.com/setupewalletekba.aspx?isMobile=false&UIC=en-US&EP=BS&cid=SPLDSPE_1819EWALL_BETS';
+	var url_help_acc_rec = '//is.hkjc.com/Page_Redirect/eWin/faq/en/pastRecFAQ.asp';
+	var url_help_recall = '//is.hkjc.com/Page_Redirect/eWin/faq/en/txnRecFAQ.asp';
+	var url_help_log = '//is.hkjc.com/Page_Redirect/eWin/faq/en/currRecFAQ.asp';
+	var url_faq = '//is.hkjc.com/jcbw/ekba/faq/en/betslipFAQ.asp';
+	var url_allup_faq = '//is.hkjc.com/jcbw/ekba/faq/en/allupFAQ.asp';
+	var url_login_timeout = '//bclient.hkjc.com/OddsServer/bchk/BChk128.aspx?bhcp=1';
+	var url_logout_box = '//is.hkjc.com/jcbw/ekba/promo/betslip_logout/betslip_lpromo.asp?lang=en&new=';
+	var url_FootballLivePath = '//football.hkjc.com/football/information/english/football/footballliveplayer.aspx?';
+	var url_SSOAuthen4WebcastURL = 'https://elogin.hkjc.com/api/SSOWeb/GetToken?UIC=en-US';
+
+	var refreshBalInterval = '3';
+	var refreshBalTimeout = '10';
+
+	var cMaxBetlines = 30;
+	var cMaxBetBuffer = 982;
+	var inplayDelayRetryTime = 4;
+
+	var BetSlipIBPath = '//txn.hkjc.com/BetSlipIB/';
+	if (typeof txnSiteId !== "undefined" && txnSiteId) {
+		if (txnSiteId != "@@@para_txnSiteId@@@") {
+			BetSlipIBPath = BetSlipIBPath.replace("txx.", "txx" + txnSiteId + ".");
+			BetSlipIBPath = BetSlipIBPath.replace("txn.", "txn" + txnSiteId + ".");
+		}
+	}
+	var tAndCPath = '/contentserver/jcbw/tAndC.json';
+	var byPassEOD = false;
+	var extStatement = false;
+	var idleSoundAlert = '//is.hkjc.com/jcbw/ekba/idleAlert/sound/Exclamation.wav';
+	var redirectAfterLogin = '';
+	var enableWebcastAccess = false;
+	var checkCounterOfferResend = true;
+
+	var alupMaxLeg = 'CHL:8;FGS:6;SGA:0;FTS:8;ECH:8;ENT:8;TNC:8;GPW:8;NTS:8;TTG:8;HAD:8;FCS:6;HDC:8;HHA:8;OOE:8;HFT:6;CHP:0;ETG:8;JKC:8;CRS:6;TPS:0;TSP:0;EHL:8;ECS:6;FHL:8;GPF:8;MSP:0;FHA:8;EDC:8;HIL:8;TQL:0;EHA:8';
+	var minBet = 'CHL:10;FGS:10;SGA:10;FTS:10;ECH:10;ENT:10;TNC:10;GPW:10;NTS:10;TTG:10;HAD:10;FCS:10;HDC:10;HHA:10;OOE:10;HFT:10;CHP:10;ETG:10;JKC:10;CRS:10;TPS:10;TSP:10;EHL:10;ECS:10;FHL:10;GPF:10;MSP:10;FHA:10;EDC:10;HIL:10;TQL:10;EHA:10;ALUPX:10;JKC:10;TNC:10';
+	var fpsBannerInfo = '{"FPSBannerControl":{"Image":[{"@path":"/ParameterControl/JCBW/Images/ImageLoaderEN.jpg","@name":"ImageLoaderEN"},{"@path":"/ParameterControl/JCBW/Images/ImageLoaderTC.jpg","@name":"ImageLoaderTC"}],"ImageLoaderUrlEN":"https://m.hkjc.com/en/other-online-services.html?b_cid=ISLDSPE_1920ISSMP_MENU_SERV#hkjc-fps","ImageTargetEN":"_new","ImageLoaderUrlTC":"https://m.hkjc.com/tc/other-online-services.html#hkjc-fps ","ImageTargetTC":"_new","StartTime":"2023-02-24 11:30","EndTime":"2026-02-24 23:59"}}';
+
+	var multiSlipPanel = null;
+
+	var ewinParaPath = BetSlipIBPath + 'services/Para.svc/GetEwinPara';
+
+	var pServer = 'pushpublic.hkjc.com';
+	
+	var esTimeInterval = 5000;
+
+	var oMenuPara = {};
+	var oMenuDV = '';
+
+	var eftConfig = {
+		ppsFAQPage: '//is.hkjc.com/jcbw/ekba/promo/pps/pps_faq_en.asp',
+		enableFPS: true,
+		enablePPS: true,
+		enableLinkAcc: true,
+		url_help_fund_deposit: '//is.hkjc.com/Page_Redirect/eWin/faq/en/eftFAQ.asp',
+		url_help_fund_withdrawal: '//is.hkjc.com/Page_Redirect/eWin/faq/en/eftBalFAQ.asp',
+		secId: 0,
+		fpsInfo: null,
+		otpResendSeconds: "180",
+		linkTandCPath: "/contentserver/jcbw/linkTAndC.json",
+		enableDepositOtherMeans: true,
+		enableWithdrawalOtherMeans: true,
+		enableEftMarketingMsg: true,
+		enableEpsChargeNotification: false
+	};
+
+	var statementConfig = {
+		enableEwalletIcon: true,
+		url_help_acc_rec: "//is.hkjc.com/Page_Redirect/eWin/faq/en/pastRecFAQ.asp",
+		url_help_log: "//is.hkjc.com/Page_Redirect/eWin/faq/en/currRecFAQ.asp",
+		url_help_recall: "//is.hkjc.com/Page_Redirect/eWin/faq/en/txnRecFAQ.asp"
+	};
+
+	if (smartAppIOSEnable) {
+		var meta = document.createElement("meta");
+		meta.name = "apple-itunes-app";
+		meta.content = smartAppIOSId;
+		document.head.appendChild(meta);
+	}
+</script>
+<style id="bg-for-print"></style>
+<script type="text/javascript" src="/extvar.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/common/VisitorAPI.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/default.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/jquery-3.3.1.min.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/jquery-cookie.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/jquery-ui.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/common.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/pd_odds_menu.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/home_msg.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/autopolling.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/menu.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/rgp/rgp.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/react.min.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/react-dom.min.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/commons/custom/oddspusherr.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/commons/lightstreamer/lscommons.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/commons/lightstreamer/lspushpage.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/commons/custom/misc.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/jquery.simplyscroll.min.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/jquery.cycle2.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/bannerad/js/system/sdceo_config.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/bannerad/js/system/sdceo_core.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/banner.js?CV=L4.06R0c"></script>
+
+<script type="text/javascript" src="/info/include/js/bs_eft.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/bs_eftValue.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/bs_eftKeypad.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/bs_betobj.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/bs_accInfo.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/bs_common.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/bs_para.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/bs_util.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/bs_data.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/bs_datastore.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/bs_setting.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/bs_allup.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/bs_betcalc.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/bs_layout.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/bs_str_table.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/bs_interface.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/bs_request.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/bs_betdiv.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/bs_logDataAccessor.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/bs_overlay.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/FileSaver.min.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/gunzip.min.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/mqtt.min.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/mqtt_util.js?CV=L4.06R0c"></script>
+<script type="text/javascript" src="/info/include/js/sha1.min.js?CV=L4.06R0c"></script>
+<script type="text/javascript">
+	loadLangPreference();
+
+	function reInit() {
+		$(window).scrollTop(0);
+		supportAutoScrolling = false;
+		$('#printDiv').html('');
+
+		switchProduct(curProduct, curLang);
+
+		clearAllInterval();
+
+		curPageId = window.location.pathname.toLowerCase().replace('/' + curProduct + '/', '').replace('.aspx', '')
+			.replace('/index', 'index');
+		callWAReq();
+	}
+
+	$(document).ready(function () {
+		if (isQRPortal) {
+			startQRPortal();
+		} else {
+
+			loadEwinPara(ewinParaPath);
+
+			$('#infoDiv').click(function () {
+				if (isSlipOpen() && betslipState != STATE_IDLEALERT) {
+					slipClose(true);
+				}
+			});
+		}
+		genMenuObject(curLang);
+		logonDetectForOddsPush();
+		mobileBrowserChecking();
+		pushFirstHistory();
+		pageScroll();
+		showBetPreviewOnEnter();
+	});
+
+	var checkChangesEnabled = true;
+	if (!isQRPortal) {
+		window.onbeforeunload = function () {
+			if ( !checkChangesEnabled )
+				return;
+
+			var returnValue = null;
+			if (isLogon() || betslipState == STATE_EKBA) {
+				returnValue = GetError("1303");
+			} else if (isBetBasketNotEmpty())
+				returnValue = GetError("refresh_warning");
+
+			if (returnValue != null) {
+				return returnValue;
+			}
+		};
+
+		window.onunload = function () {
+			if (isLogon() || betslipState == STATE_EKBA) {
+				if(typeof bypassForceLogout == 'undefined' || bypassForceLogout != true)  {
+					forceLogout();
+				}
+			}
+			CloseAllPopup(true);
+		}
+	}
+</script>
+<script>
+	$(window).bind("pageshow", function(event) {
+		if(event.originalEvent.persisted) {
+			window.location.reload();
+		}
+	});
+</script>
+<script charset='UTF-8'>
+window['adrum-start-time'] = new Date().getTime();
+
+    (function(config){
+        (function(xhr) {
+            xhr.exclude = {
+                urls: [{
+                    pattern: ".*glassbox.*",
+                    type: "regex"
+                }]
+            };
+        })(config.xhr || (config.xhr = {}));
+    })(window["adrum-config"] || (window["adrum-config"] = {}));
+
+(function(config){
+    config.appKey = 'EUM-AAB-AVW';
+    config.adrumExtUrlHttp = 'http://cdn.appdynamics.com';
+    config.adrumExtUrlHttps = 'https://cdn.appdynamics.com';
+    config.beaconUrlHttps = 'https://apm.cld.hkjc.com';
+    config.xd = {enable : false};
+    config.spa = {
+            "spa2": true 
+    };
+})(window['adrum-config'] || (window['adrum-config'] = {}));
+</script>
+<script src='//cdn.appdynamics.com/adrum/adrum-latest.js'></script>
+ 
+</head>
+<body>
+<div id="printDiv"></div>
+<div id="infoDiv">
+    <script type="text/javascript">
+function receiveMessage(event) {
+ var trustedOrigins = '//is.hkjc.com;//special.hkjc.com'.split(';');
+var i = trustedOrigins.length;
+ while (i--) {
+ if (trustedOrigins[i] === event.origin) {
+eval(event.data);}}}
+if (!window.addEventListener) window.attachEvent('onmessage', receiveMessage);
+else window.addEventListener('message', receiveMessage, false);
+</script>
+
+    <div id="topNav" style="z-index: 200; position: absolute"></div>
+<script type="text/javascript" src="/info/include/js/xml2json.min.js?CV=L4.06R0c"></script>
+<div class="fMenuTABLE">
+  <div class="fMenuTR">
+    <div class="fMenuRow"><img id="machineInfo" src="/info/include/images/spacer.gif?CV=L4.06R0c" width="10" height="10"></div>
+    <div class="fMenuRowLang"><a href="javascript:changeLang()" class="topMenuLang"></a></div>
+    <div class="fMenuRowHome"><a href="javascript:topMenuLink(0);" class="topMenuHome"></a></div>
+    <div id="fMenuRC" onclick="topMenuLink(1);"></div>
+    <div class="fMenuRowLine"></div>
+    <div id="fMenuHR" onclick="topMenuLink(2);"></div>
+    <div class="fMenuRowLine"></div>
+    <div id="fMenuFB" onclick="topMenuLink(3);"></div>
+    <div class="fMenuRowLine"></div>
+    <div id="fMenuMEM" onclick="topMenuLink(4);"></div>
+    <div class="fMenuRowLine"></div>
+    <div id="fMenuCHA" onclick="topMenuLink(5);"></div>
+    <div class="fMenuRowLine"></div>
+    <div id="fMenuABOUT" onclick="topMenuLink(6);"></div>
+  </div>
+</div>
+
+<div class="secMenu">
+  <div class="secMenuTR">
+    <div class="secTable">
+      <div id="secMenuHR" title="Racing" onclick="switchTo('racing', 'index', curLang);"></div>
+      <div id="secMenuFB" title="HKJC Football" onclick="switchTo('football', 'index', curLang);"></div>
+      <div id="secMenuM6" title="Mark Six" onclick="switchTo('marksix', 'index', curLang);"></div>
+      <div id="secMenu3in1" title="EWin" onclick="switchTo('home', 'index', curLang);"></div> 
+      <div class="date" id="server_datetime"></div>
+    </div>
+  </div>
+  <div class="secMenuLine"></div>
+</div>
+
+<script type="text/javascript">
+  var serverDateObj = new Date(2023, 10, 22, 14, 50, 49);
+  serverOddsRefresh();
+  function serverOddsRefresh() {
+    $("#server_datetime").html(formatServerOdds(serverDateObj));
+	serverDateObj.setMinutes(serverDateObj.getMinutes() + 1);
+    window.setTimeout("serverOddsRefresh()", 60000);
+  }
+  function formatServerOdds(d) {
+    return addZero(d.getDate()) + "/" + addZero((d.getMonth() + 1)) + "/" + addZero(d.getFullYear()) + " " + addZero(d.getHours()) + ":" + addZero(d.getMinutes())+' ('+jsWeekDayArr[curLang][d.getDay()] + ')';
+  }
+  function addZero(tstr) {
+    return ("0"+tstr).substr((tstr+"").length-1, 2)
+  }
+  
+  $('#machineInfo').prop('title', '164');
+</script>
+
+    <div id="topBannerDiv" class="topBanner">
+  <div id="divTopBanner">
+    <div id="info_top_block"></div>
+    <div id="info_top_promo"></div>
+    <div style="clear:both"></div>
+  </div>
+</div>
+
+    <div id="homeSNDiv" style="display:none">
+	<div style="display:table;width:764px;height:26px;background-color:#002E63;border:#002E63 0.5px solid;padding:0px 5px 0px 5px">
+		<div style="display:table-row;position:relative;width:764px;background-color:#FFDE00;">
+			<div class="importantCell1"></div>
+			<div class="importantCell3" id="divNewsCont"><div id="divNews" class="content"></div></div>
+			<div class="importantCell4" style="visibility:hidden" onclick="reloadImportantNotices(toProductShortCode()); NewWindow('/msginbox.aspx?lang=' + curLang + '&pd=' + toProductShortCode(), 'msgInbox' + toProductShortCode(), 664, 462, 1, 0);">More</div>
+		</div>
+	</div>
+</div>
+
+    <div id="thirdMenu" class="pMenuTABLE"></div>
+    <div id="oddsMenu"></div>
+    <div id="container">
+        <script type="text/javascript">
+            var dataType = '';
+            var dPageDone = $.Deferred();
+
+            //Outbound Comingling Info
+            var obMsg = {};
+            var allOddsObj = [];
+
+            pageName = 'WP';
+            var curRaceNo = 3;
+            if (curRaceNo == 0)
+                curRaceNo = 1;
+            if ('False'.toLowerCase() == 'true') {
+                pageName = 'XPOOL';
+            }
+
+            $.when(
+                $.getScript("/racing/script/rsdata.js?lang=en&date=2023-11-22&venue=HV&CV=L4.06R0c"),
+                $.getScript("/racing/script/rsstr.js?lang=en&CV=L4.06R0c"),
+                getScriptNotCache("/racing/script/RaceCard.js?CV=L4.06R0c"),
+                getScriptNotCache("/racing/script/FOTable.js?CV=L4.06R0c"),
+                getScriptNotCache("/racing/script/racingCommon.js?CV=L4.06R0c"),
+                getScriptNotCache("/racing/script/racingComponent.js?CV=L4.06R0c"),
+                getScriptNotCache("/racing/script/racingPush.js?CV=L4.06R0c"),
+                getScriptNotCache("/racing/script/randomGen.js?CV=L4.06R0c"),
+                getScriptNotCache("/racing/script/highcharts.js?CV=L4.06R0c"),
+                getScriptNotCache("/racing/script/invChart.js?CV=L4.06R0c"),
+                getScriptNotCache("/info/include/js/wz_tooltip.js?CV=L4.06R0c"),
+                getScriptNotCache("/contentserver/jcbw/jkc/jkc.js?CV=L4.06R0c"),
+                getScriptNotCache("/contentserver/jcbw/tnc/tnc.js?CV=L4.06R0c"),
+                $.Deferred(function (deferred) {
+                    $(deferred.resolve);
+                })
+            ).done(function () {
+                unloadCommon();
+                unloadAllCss();
+                loadCss("/racing/info/css/racing_button.css?CV=L4.06R0c");
+
+                oMenuPara = { 'date': mtgDate, 'venue': mtgVenue, 'raceno': curRaceNo > 0 ? curRaceNo : getParameterByName('raceno') };
+                oMenuDV = mtgDate + mtgVenue;
+
+                reInit();
+                rsInit();
+                document.title = 'HKJC Horse Race Betting Limited';
+
+                resetRanGenFlag();
+
+                $('.combination').css({ "display": "none", "color": "#948a54" });
+
+                adjustMtgInfoHeader();
+
+                initRacing();
+                resetPushSchemaRS();
+
+                enquirePeNote();
+
+                dPageDone.resolve();
+                });
+
+             $.when(dPageDone).done(function () {
+                $.when(
+                    $.getScript("/info/include/js/banner_top.js?CV=L4.06R0c"),
+                    $.getScript("/info/include/js/banner_bottom.js?CV=L4.06R0c"),
+                    $.Deferred(function (deferred) {$(deferred.resolve);})
+                ).done(function () {
+                    rcBannerInit();
+                });
+            });
+        </script>
+        <script type="text/javascript">
+  var oMenuLang = 'E';
+  var oMenuPD = 'HR';
+  var oMenuLPD = 'racing';
+  var oMenuIconPath = '/ContentServer/jcbw/images/';
+  var oMenuData = {"pMenu":[{"nE":"Entrylist","nC":"報名表","uE":"//racing.hkjc.com/racing/info/meeting/Entries/English/Local","uC":"//racing.hkjc.com/racing/info/meeting/Entries/chinese/Local","pg":"","pa":"","at":"width=680,height=440,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":null,"child":null},{"nE":"Race Card","nC":"排位表","uE":"//racing.hkjc.com/racing/info/meeting/Racecard/english/Local","uC":"//racing.hkjc.com/racing/info/meeting/Racecard/chinese/Local","pg":"","pa":"","at":"width=680,height=440,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":null,"child":null},{"nE":"Fixture","nC":"賽期表","uE":"//racing.hkjc.com/racing/information/English/Racing/Fixture.aspx","uC":"//racing.hkjc.com/racing/information/Chinese/Racing/Fixture.aspx","pg":"","pa":"","at":"width=680,height=440,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":null,"child":null},{"nE":"Ref. Info","nC":"參考資料","uE":"//racing.hkjc.com/racing/Info/meeting/Changes/English/Local/","uC":"//racing.hkjc.com/racing/Info/meeting/Changes/chinese/Local/","pg":"","pa":"","at":"width=680,height=440,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":null,"child":[{"nE":"Changes","nC":"更易事項","uE":"//racing.hkjc.com/racing/Info/meeting/Changes/English/Local/","uC":"//racing.hkjc.com/racing/Info/meeting/Changes/chinese/Local/","pg":"","pa":"","at":"width=653,height=780,left=0,top=0,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null}]},{"nE":"Jockey Challenge Info","nC":"騎師王資料","uE":"/racing/pages/odds_jkc.aspx?lang=en","uC":"/racing/pages/odds_jkc.aspx?lang=ch","pg":"","pa":"","at":"","pu":"0","dm":null,"child":[{"nE":"JKC Standings","nC":"騎師王積分","uE":"//racing.hkjc.com/racing/information/English/JKC/JKCResult.aspx","uC":"//racing.hkjc.com/racing/information/Chinese/JKC/JKCResult.aspx","pg":"","pa":"","at":"width=425,height=500,left=0,top=0,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null},{"nE":"Jockey Challenge Odds Chart","nC":"騎師王賠率走勢圖","uE":"//racing.hkjc.com/racing/english/racing-info/jkc-odds-chart.aspx","uC":"//racing.hkjc.com/racing/chinese/racing-info/jkc-odds-chart.aspx","pg":"","pa":"","at":"width=425,height=500,left=0,top=0,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null},{"nE":"Jockey Challenge Statistics","nC":"騎師王統計","uE":"//racing.hkjc.com/racing/information/English/jkc/JkcStat.aspx","uC":"//racing.hkjc.com/racing/information/chinese/jkc/JkcStat.aspx","pg":"","pa":"","at":"width=653,height=780,left=0,top=0,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null},{"nE":"JKC Scheduled Rides List","nC":"騎師王坐騎表","uE":"https://racing.hkjc.com/racing/information/english/Racing/JKCScheduledRides.aspx","uC":"//racing.hkjc.com/racing/information/chinese/Racing/JKCScheduledRides.aspx","pg":"","pa":"","at":"width=680,height=440,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null},{"nE":"JKC Introduction","nC":"騎師王簡介","uE":"//campaigns.hkjc.com/jockey-challenge/en/ ","uC":"//campaigns.hkjc.com/jockey-challenge/ch/ ","pg":"","pa":"","at":"width=680,height=440,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null}]},{"nE":"Trainer Challenge Info","nC":"練馬師王資料","uE":"/racing/pages/odds_tnc.aspx?lang=en","uC":"/racing/pages/odds_tnc.aspx?lang=ch","pg":"","pa":"","at":"","pu":"0","dm":null,"child":[{"nE":"TNC Standings","nC":"練馬師王積分","uE":"//racing.hkjc.com/racing/information/English/TNC/TNCResult.aspx","uC":"//racing.hkjc.com/racing/information/Chinese/TNC/TNCResult.aspx","pg":"","pa":"","at":"width=425,height=500,left=0,top=0,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null},{"nE":"Trainer Challenge Odds Chart","nC":"練馬師王賠率走勢圖","uE":"//racing.hkjc.com/racing/english/racing-info/tnc-odds-chart.aspx","uC":"//racing.hkjc.com/racing/chinese/racing-info/tnc-odds-chart.aspx","pg":"","pa":"","at":"width=425,height=500,left=0,top=0,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null},{"nE":"Trainer Challenge Statistics","nC":"練馬師王統計","uE":"//racing.hkjc.com/racing/information/english/tnc/tncStat.aspx","uC":"//racing.hkjc.com/racing/information/chinese/tnc/tncStat.aspx","pg":"","pa":"","at":"width=653,height=780,left=0,top=0,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null},{"nE":"TNC Entries List","nC":"練馬師王出馬表","uE":"//racing.hkjc.com/racing/information/english/Racing/TNCEntries.aspx","uC":"//racing.hkjc.com/racing/information/Chinese/Racing/TNCEntries.aspx","pg":"","pa":"","at":"width=680,height=440,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null},{"nE":"TNC Introduction","nC":"練馬師王簡介","uE":"//campaigns.hkjc.com/trainer-challenge/en","uC":"//campaigns.hkjc.com/trainer-challenge/ch","pg":"","pa":"","at":"width=680,height=440,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null}]},{"nE":"Results & Dividend","nC":"賽果及派彩","uE":"","uC":"","pg":"pages/results","pa":"","at":"","pu":"0","dm":null,"child":[{"nE":"Current Raceday Results & Dividend","nC":"即日賽果及派彩","uE":"","uC":"","pg":"pages/results","pa":"","at":"","pu":"0","dm":"","child":null},{"nE":"All Results & Dividend","nC":"所有賽果及派彩","uE":"//racing.hkjc.com/racing/information/English/racing/LocalResults.aspx","uC":"//racing.hkjc.com/racing/information/Chinese/racing/LocalResults.aspx","pg":"","pa":"","at":"width=680,height=440,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null},{"nE":"Rebate Calculator","nC":"回扣計算機","uE":"/rbc/cal.aspx?lang=en","uC":"/rbc/cal.aspx?lang=ch","pg":"","pa":"","at":"width=680,height=600,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null}]},{"nE":"Tools","nC":"分析工具","uE":"//racing.hkjc.com/racing/English/tipsindex/tips_index.asp","uC":"//racing.hkjc.com/racing/chinese/tipsindex/tips_index.asp","pg":"","pa":"","at":"width=680,height=440,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":null,"child":[{"nE":"Racing Notes","nC":"賽馬筆記","uE":"javascript:goPeNoteMenu()","uC":"javascript:goPeNoteMenu()","pg":"","pa":"racingNotes","at":"width=680,height=440,left=20,top=20,scrollbars=yes,resizable=yes","pu":"0","dm":"hkjc.com","child":null},{"nE":"Raceday Focus","nC":"賽日頭條","uE":"//racing.hkjc.com/racing/english/racing-info/rdf/raceday_focus.asp","uC":"//racing.hkjc.com/racing/chinese/racing-info/rdf/raceday_focus_1.asp","pg":"","pa":"","at":"width=680,height=440,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null},{"nE":"Intro to New Horses","nC":"初出馬介紹","uE":"//racing.hkjc.com/racing/english/racing-info/newhorse.asp","uC":"//racing.hkjc.com/racing/chinese/racing-info/newhorse.asp","pg":"","pa":"","at":"width=680,height=440,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null},{"nE":"Last Run Reminder","nC":"上仗備忘","uE":"//racing.hkjc.com/racing/english/racing-info/last-run-reminder.aspx","uC":"//racing.hkjc.com/racing/chinese/racing-info/last-run-reminder.aspx","pg":"","pa":"","at":"width=680,height=440,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null},{"nE":"Stats Centre","nC":"賽日數據","uE":"//racing.hkjc.com/racing/english/stats-centre/index.aspx","uC":"//racing.hkjc.com/racing/chinese/stats-centre/index.aspx","pg":"","pa":"","at":"width=680,height=440,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null},{"nE":"Tips Index","nC":"貼士指數","uE":"//racing.hkjc.com/racing/English/tipsindex/tips_index.asp","uC":"//racing.hkjc.com/racing/chinese/tipsindex/tips_index.asp","pg":"","pa":"","at":"width=680,height=440,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null},{"nE":"SpeedPRO","nC":"速勢能量","uE":"//racing.hkjc.com/racing/speedpro/english/formguide/1.html","uC":"//racing.hkjc.com/racing/speedpro/chinese/formguide/1.html","pg":"","pa":"","at":"width=680,height=440,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null},{"nE":"Jockey/Trainer Combo & Debutants Performance","nC":"騎練配對及<BR>初出馬成績","uE":"//campaign.hkjc.com/en/racing/jtcombo_debutants_statistics.aspx","uC":"//campaign.hkjc.com/ch/racing/jtcombo_debutants_statistics.aspx","pg":"","pa":"","at":"width=680,height=440,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null},{"nE":"Horse Movement Records","nC":"馬匹搬遷紀錄","uE":"//campaign.hkjc.com/en/racing/conghua-movement-records.aspx","uC":"//campaign.hkjc.com/ch/racing/conghua-movement-records.aspx","pg":"","pa":"","at":"width=680,height=440,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null},{"nE":"All Up Calculator","nC":"過關計算機","uE":"//racing.hkjc.com/racing/info/meeting/AllUpCalculator/english/Local","uC":"//racing.hkjc.com/racing/info/meeting/AllUpCalculator/chinese/Local","pg":"","pa":"","at":"width=770,height=550,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null}]},{"nE":"Pools / Bet Types","nC":"投注彩池 / 種類","uE":"#","uC":"#","pg":"","pa":"","at":"","pu":"0","dm":null,"child":[{"nE":"Pari-mutuel Pools","nC":"平分彩金彩池","uE":"//special.hkjc.com/root2/racing/info/en/betting/guide_qualifications_pari.asp","uC":"//special.hkjc.com/root2/racing/info/ch/betting/guide_qualifications_pari.asp","pg":"","pa":"","at":"width=680,height=440,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null},{"nE":"Fixed Odds Bet Types","nC":"固定賠率投注種類","uE":"//special.hkjc.com/root2/racing/info/en/betting/guide_qualifications_fixed.asp","uC":"//special.hkjc.com/root2/racing/info/ch/betting/guide_qualifications_fixed.asp","pg":"","pa":"","at":"width=680,height=440,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null},{"nE":"Flexi Bet Info","nC":"靈活玩簡介","uE":"//special.hkjc.com/racing/info/en/betting/guide-flexibet-index.asp","uC":"//special.hkjc.com/racing/info/ch/betting/guide-flexibet-index.asp","pg":"","pa":"","at":"width=785,height=600,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null},{"nE":"Chance Table","nC":"注數表","uE":"//special.hkjc.com/root2/racing/info/en/betting/guide_chance.asp","uC":"//special.hkjc.com/root2/racing/info/ch/betting/guide_chance.asp","pg":"","pa":"","at":"width=680,height=440,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null}]},{"nE":"Rebate","nC":"回扣","uE":"//special.hkjc.com/root2/racing/info/en/betting/guide_rebate.asp","uC":"//special.hkjc.com/root2/racing/info/ch/betting/guide_rebate.asp","pg":"","pa":"","at":"width=680,height=440,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":null,"child":[{"nE":"Rebate","nC":"回扣","uE":"//special.hkjc.com/root2/racing/info/en/betting/guide_rebate.asp","uC":"//special.hkjc.com/root2/racing/info/ch/betting/guide_rebate.asp","pg":"","pa":"","at":"width=680,height=440,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null},{"nE":"Rebate Calculator","nC":"回扣計算機","uE":"/rbc/cal.aspx?lang=en","uC":"/rbc/cal.aspx?lang=ch","pg":"","pa":"","at":"width=680,height=600,left=20,top=20,scrollbars=yes,resizable=yes","pu":"1","dm":"","child":null}]}],"oMenu":[{"nE":"Odds","nC":"賠率","uE":"","uC":"","pg":"","pa":"","ta":"","icon":"","iconE":"","iconC":"","type":"LABEL","dv":"","child":null},{"nE":"All Up / Cross Pool All Up","nC":"過關 / 混合過關","uE":"","uC":"","pg":"pages/odds_cross_alup","pa":"","ta":"","icon":"","iconE":"","iconC":"","type":"ODDS_CROSS_ALUP.ASPX","dv":"","child":null},{"nE":"Win / Place","nC":"獨贏 / 位置","uE":"","uC":"","pg":"pages/odds_wp","pa":"","ta":"","icon":"","iconE":"","iconC":"","type":"ODDS_WP.ASPX,ODDS_WP_ALUP.ASPX","dv":"","child":null},{"nE":"Quinella / Quinella Place","nC":"連贏 / 位置Q","uE":"","uC":"","pg":"pages/odds_wpq","pa":"","ta":"","icon":"","iconE":"","iconC":"","type":"ODDS_WPQ.ASPX,ODDS_WPQ_ALUP.ASPX","dv":"","child":null},{"nE":"Forecast","nC":"二重彩","uE":"","uC":"","pg":"pages/odds_FCT","pa":"","ta":"","icon":"","iconE":"","iconC":"","type":"ODDS_FCT.ASPX","dv":"","child":null},{"nE":"Tierce","nC":"三重彩","uE":"","uC":"","pg":"pages/odds_tce","pa":"","ta":"","icon":"","iconE":"","iconC":"","type":"ODDS_TCE.ASPX","dv":"","child":null},{"nE":"Trio","nC":"單T","uE":"","uC":"","pg":"pages/odds_tri","pa":"","ta":"","icon":"","iconE":"","iconC":"","type":"ODDS_TRI.ASPX,ODDS_TRI_ALUP.ASPX","dv":"","child":null},{"nE":"First 4","nC":"四連環","uE":"","uC":"","pg":"pages/odds_ff","pa":"","ta":"","icon":"","iconE":"","iconC":"","type":"ODDS_FF.ASPX","dv":"","child":null},{"nE":"Quartet","nC":"四重彩","uE":"","uC":"","pg":"pages/odds_qtt","pa":"","ta":"","icon":"","iconE":"","iconC":"","type":"ODDS_QTT.ASPX","dv":"","child":null},{"nE":"Double","nC":"孖寶","uE":"","uC":"","pg":"pages/odds_dbl","pa":"","ta":"","icon":"","iconE":"","iconC":"","type":"ODDS_DBL.ASPX","dv":"","child":null},{"nE":"Treble","nC":"三寶","uE":"","uC":"","pg":"pages/odds_tbl","pa":"","ta":"","icon":"","iconE":"","iconC":"","type":"ODDS_TBL.ASPX","dv":"","child":null},{"nE":"Double Trio","nC":"孖T","uE":"","uC":"","pg":"pages/odds_dt","pa":"","ta":"","icon":"","iconE":"","iconC":"","type":"ODDS_DT.ASPX","dv":"","child":null},{"nE":"Triple Trio","nC":"三T","uE":"","uC":"","pg":"pages/odds_tt","pa":"","ta":"","icon":"","iconE":"","iconC":"","type":"ODDS_TT.ASPX","dv":"","child":null},{"nE":"Six Up","nC":"六環彩","uE":"","uC":"","pg":"pages/odds_6up","pa":"","ta":"","icon":"jackpot.gif","iconE":"Jackpot","iconC":"多寶","type":"ODDS_6UP.ASPX","dv":";2023-11-22HV","child":null},{"nE":"Jockey Challenge","nC":"騎師王","uE":"","uC":"","pg":"pages/odds_jkc","pa":"","ta":"","icon":"","iconE":"","iconC":"","type":"ODDS_JKC.ASPX","dv":"","child":null},{"nE":"Trainer Challenge","nC":"練馬師王","uE":"","uC":"","pg":"pages/odds_tnc","pa":"","ta":"","icon":"","iconE":"","iconC":"","type":"ODDS_TNC.ASPX","dv":"","child":null},{"nE":"Jockey Trainer Combo","nC":"騎練配對","uE":"","uC":"","pg":"pages/odds_jtcombo","pa":"","ta":"","icon":"","iconE":"","iconC":"","type":"JTCOMBO.ASPX","dv":"","child":null},{"nE":"Progressive Win Odds","nC":"獨贏賠率走勢","uE":"","uC":"","pg":"pages/odds_pwin","pa":"","ta":"","icon":"","iconE":"","iconC":"","type":"PWIN.ASPX","dv":"","child":null},{"nE":"Pool Investment","nC":"投注額","uE":"","uC":"","pg":"pages/odds_turnover","pa":"","ta":"","icon":"","iconE":"","iconC":"","type":"TURNOVER.ASPX","dv":"","child":null}]};
+</script>
+
+        <div class="bodyMainTable">
+            <div class="bodyMainTableRow">
+                <div class="bodyMainOddsMenu">
+                </div>
+                <div class="bodyMainOddsTable content">
+                    
+<div id="divMeetingInfo" class="mtgInfoWP">
+    <div class="mtgInfoLeft">
+        <div class="mtgInfoPageName" id="lblPageName">Win / Place</div>
+        <div class="mtgInfoHelp" onclick="goBettingGuide()" title="Betting Guide"></div>
+        <div class="mtgInfoDV"><nobr>22/11/2023, Wednesday,</nobr> <nobr>Happy Valley</nobr></div>
+        <div class="mtgInfoCheckboxDiv allupChkBox"><input id="allupCheckbox" type="checkbox" class="mtgInfoCheckbox" onClick="switchAllUpPage();"></div><div class="mtgInfoTxt allupChkBox"><label for="allupCheckbox">All Up</label></div>
+    </div>
+    <div class="mtgInfoRight">
+        <div class="mtgInfoRefreshTime"><nobr>Refresh at:</nobr> <span id="oddsRefreshTime"></span></div><div class="mtgInfoRefreshTxt refresh"><a href="#" onclick="refreshFunc()" class="white" name="refresh-pull">Refresh Odds</a></div><div class="mtgInfoRefresh refresh" onclick="refreshFunc()" title="Refresh Odds"></div>
+        <div class="mtgInfoDropdown"><select id="oddsDataDropDown" class="select1" style="font-size:10px;width:95px"onchange="changeDataType(this.value)"><option value="" selected>Current Odds</option><option value="pre">Pre-Sell Odds</option></select></div>
+        
+    </div>
+    <div style="clear:both"></div>
+</div>
+
+
+<div class="racebg">
+	
+	<div class="raceInfoTxt">Race</div>
+	<div id="raceSel1" class="raceNoOff_1" onclick="selectRace(1)" title="Race 1"></div><div id="raceSel2" class="raceNoOff_2" onclick="selectRace(2)" title="Race 2"></div><div id="raceSel3" class="raceNoOn_3" onclick="selectRace(3)" title="Race 3"></div><div id="raceSel4" class="raceNoOff_4" onclick="selectRace(4)" title="Race 4"></div><div id="raceSel5" class="raceNoOff_5" onclick="selectRace(5)" title="Race 5"></div><div id="raceSel6" class="raceNoOff_6" onclick="selectRace(6)" title="Race 6"></div><div id="raceSel7" class="raceNoOff_7" onclick="selectRace(7)" title="Race 7"></div><div id="raceSel8" class="raceNoOff_8" onclick="selectRace(8)" title="Race 8"></div>
+    <div class="raceWebCastIcon" onclick="openWebcastPopup();" style="display:none" title=""></div>
+</div>
+
+
+<div style="padding:3px 3px 3px 3px">
+    <div style="float:left;vertical-align:middle;width:85%"><span><strong>Race 3</strong></span><div class="raceInfoStrokeBlack"></div><span class="content">TAI TAM HANDICAP, <nobr>22/11/2023</nobr>, <nobr>20:10</nobr>, <nobr>Class 4</nobr>, <nobr>TURF</nobr>, <nobr>"C" Course</nobr>, <nobr>1650m</nobr>, Good</span></div>
+    <div class="rsAddBet" onclick="processBet('betslip');" title="Add To Slip"></div>
+    
+    <div style="clear:both"></div>
+</div>
+
+
+<div id="oddsContentMain">
+    <div id="rsCalTop"></div>
+    <div style="padding-bottom:4px">
+        <div id="winplaceTable"></div>
+    </div>
+    <div>
+        <div id="cbMsg"></div>
+        <div id="cbTable"></div>
+        <div id="cbRemark1"></div>
+    </div>
+    <div>
+        <div id="oddsDropLegend"></div>
+    </div>
+    <div>
+        
+<div style="padding:3px 3px 3px 3px">
+    <div style="float:left;vertical-align:middle;width:85%"></div>
+    <div class="rsAddBet" onclick="processBet('betslip');" title="Add To Slip"></div>
+    
+    <div style="clear:both"></div>
+</div>
+    </div>
+    <div style="padding:2px 0px 5px 0px">
+        
+<table style='display:' width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td colspan="4" class="wpSubTitleBar" style="PADDING-RIGHT:0px; PADDING-LEFT:10px; PADDING-BOTTOM:5px; PADDING-TOP:5px">Total Investment</td>
+	</tr>
+	<tr>
+		<td width="50%" valign="top">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr><td width="60%" align="center" class="tableContent1">Win</td><td width="40%" align="right" class="tableContent1" style="padding-right:20px;"><span id="poolInvPoolTotWIN"></span></td></tr><tr><td width="60%" align="center" class="tableContent2">Place</td><td width="40%" align="right" class="tableContent2" style="padding-right:20px;"><span id="poolInvPoolTotPLA"></span></td></tr><tr><td width="60%" align="center" class="tableContent1">Quinella</td><td width="40%" align="right" class="tableContent1" style="padding-right:20px;"><span id="poolInvPoolTotQIN"></span></td></tr><tr><td width="60%" align="center" class="tableContent2">Quinella Place</td><td width="40%" align="right" class="tableContent2" style="padding-right:20px;"><span id="poolInvPoolTotQPL"></span></td></tr><tr><td width="60%" align="center" class="tableContent1">Forecast</td><td width="40%" align="right" class="tableContent1" style="padding-right:20px;"><span id="poolInvPoolTotFCT"></span></td></tr><tr><td width="60%" align="center" class="tableContent2">Tierce</td><td width="40%" align="right" class="tableContent2" style="padding-right:20px;"><span id="poolInvPoolTotTCE"></span></td></tr><tr><td width="60%" align="center" class="tableContent1">Trio</td><td width="40%" align="right" class="tableContent1" style="padding-right:20px;"><span id="poolInvPoolTotTRI"></span></td></tr><tr><td width="60%" align="center" class="tableContent2">Quartet and First 4</td><td width="40%" align="right" class="tableContent2" style="padding-right:20px;"><span id="poolInvPoolTotF-F"></span></td></tr>
+			</table>
+		</td>
+
+		<td width="50%" valign="top">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr><td width="60%" align="center" class="tableContent1">Double</td><td width="40%" align="right" class="tableContent1" style="padding-right:20px;"><span id="poolInvPoolTotDBL"></span></td></tr><tr><td width="60%" align="center" class="tableContent2">Treble</td><td width="40%" align="right" class="tableContent2" style="padding-right:20px;"><span id="poolInvPoolTotTBL"></span></td></tr><tr><td width="60%" align="center" class="tableContent1">Double Trio</td><td width="40%" align="right" class="tableContent1" style="padding-right:20px;"><span id="poolInvPoolTotD-T"></span></td></tr><tr><td width="60%" align="center" class="tableContent2">Six Up</td><td width="40%" align="right" class="tableContent2" style="padding-right:20px;"><span id="poolInvPoolTot6UP"></span></td></tr><tr><td width="60%" align="center" class="tableContent1">Race Total (Single Race Pools)</td><td width="40%" align="right" class="tableContent1" style="padding-right:20px;"><span id="poolInvPoolTotSUM"></span></td></tr><tr><td width="60%" align="center" class="tableContent2">Race Total (All Pools)</td><td width="40%" align="right" class="tableContent2" style="padding-right:20px;"><span id="poolInvPoolTotTOTALSUM"></span></td></tr>
+			</table>
+		</td>
+
+	</tr>
+</table>
+<div bgcolor="#4A8CC1" style="border-bottom:3px solid #4A8CC1;"></div>
+<div id="remarkTxt" style="padding:2px 0px 0px 0px">
+    
+</div>
+
+
+<script type="text/javascript">
+var showInvComingleMsg = true;
+
+function poolInvPoolTotLoadDoc() {
+poolInvPoolTotRefreshDoc(jsonURL + '?type=pooltot&date=' + mtgDate + '&venue=' + mtgVenue + '&raceno=' + curRaceNo);
+
+}
+   
+
+function poolInvPoolTotRefreshDoc(url, retryOnce) {
+    $.get(url, function (data) {
+        if (data.indexOf && data.indexOf(wafKeyword) >= 0 && !retryOnce) {
+            $('#tFrame').attr('src', '/reload.aspx?a=' + (new Date().getTime()));
+            setTimeout(function () {
+                poolInvPoolTotRefreshDoc(url, true);
+            }, 1000);
+            return;
+        }
+
+        poolInvPoolTotRefreshOddsJson(data)}
+    ).fail(function(){window.setTimeout('poolInvPoolTotRefreshDoc()', 400);});
+}
+
+function poolInvPoolTotRefreshOddsJson(json) {
+    var nodes = json.inv;
+    var singleTotal = 0;
+    var allTotal = 0;
+    var oddsTime = json.updateTime;
+    updateRefreshTime(oddsTime);
+    
+    var singlePoolList = 'WIN;PLA;QIN;QPL;IWN;CWA;CWB;CWC;FCT;TCE;TRI;F-F;QTT';
+    var pid = [];
+    for ( var i=0; i<nodes.length; i++ ) {
+        var node = nodes[i];
+        var pool = node.pool;
+        var investment = node.value;
+        try{
+            $('#poolInvPoolTot'+pool).html('$ ' + addComma(investment));
+            if (!isNaN(investment)) {
+                if (typeof (node.pid) == 'undefined') {
+                    if (singlePoolList.indexOf(pool) >= 0) {
+                        singleTotal += parseInt(investment, 10);
+                    }
+                    allTotal += parseInt(investment, 10);
+                } else if (pid.indexOf(node.pid) < 0) {
+                    if (singlePoolList.indexOf(pool) >= 0) {
+                        singleTotal += parseInt(investment, 10);
+                    }
+                    allTotal += parseInt(investment, 10);
+                    pid.push(node.pid);
+                }
+            }
+        }catch(e){
+
+        }
+    }
+    $('#poolInvPoolTotSUM').html('<strong class="racingBold">$ ' + addComma(singleTotal.toString()) + '</strong>');
+    $('#poolInvPoolTotTOTALSUM').html('<strong class="racingBold">$ ' + addComma(allTotal.toString()) + '</strong>');
+    $('#poolInvPoolTotGRANDSUM').html('<strong class="racingBold">$ ' + addComma(json.totalInv) + '</strong>');
+}
+
+
+
+/**************************************************/
+/*            for odds push                       */
+/**************************************************/
+var startTotalInvRefresh = false;
+
+function poolInvPoolTotRefreshOddsOddsPush() {
+  //var stringTest = "153029@@@;WIN=1804284.0;PLA=471018.0;QIN=697767.0;QPL=218408.0;TRI=332132.0;DBL=129320.0;TCE=83780.0@@@;WIN=1117447.0;PLA=857831.0;QIN=266870.0;QPL=190801.0;TRI=229233.0;DBL=373550.0;TCE=16690.0@@@;WIN=287131.0;PLA=325558.0;QIN=598205.0;QPL=739841.0;TRI=59480.0;DBL=77940.0;TCE=232503.0@@@;WIN=114419.0;PLA=99981.0;QIN=73893.0;QPL=357626.0;TRI=36844.0;DBL=52560.0;TCE=334944.0@@@;WIN=181070.0;PLA=163687.0;QIN=267015.0;QPL=45877.0;TRI=18774.0;DBL=4140.0;TCE=18785.0@@@;WIN=38400.0;PLA=20680.0;QIN=151460.0;QPL=145686.0;TRI=10888.0;DBL=116940.0;TCE=172090.0@@@;WIN=17510.0;PLA=18030.0;QIN=48330.0;QPL=37350.0;TRI=4982.0;DBL=53640.0;TCE=121228.0@@@;WIN=6902423.0;PLA=28713.0;QIN=236191.0;QPL=97913.0;TRI=42610.0;TCE=31120.0@@@";
+  var tmpArray = meetingPushData['POOL_TOTAL'].split('@@@');
+  if (tmpArray.length <= curRaceNo) {
+        return;
+  }
+
+  var singleTotal = 0;
+  var allTotal = 0;
+  var grandTotal = 0;
+  var invPoolList = [].concat(singleRacePool).concat(multiRacePool);
+  var winMergeID = mergedPoolName['WIN_' + curRaceNo];
+  var winMerge = winMergeID != null;
+  var fctTceTriMergeID = mergedPoolName['FCT_' + curRaceNo] != null ? mergedPoolName['FCT_' + curRaceNo] : mergedPoolName['TCE_' + curRaceNo];
+  var fctTceTriMerge = fctTceTriMergeID != null;
+  var qttMergeID = mergedPoolName['QTT_' + curRaceNo];
+  var qttMerge = qttMergeID != null;
+
+  var poolInv = {};
+  var totalArray = tmpArray[curRaceNo].split(';');
+  for (var i = 0; i < totalArray.length; i++) {
+      var node = totalArray[i];
+      if (node == '')
+          continue;
+
+      var pool = node.split('=')[0];
+      var inv = node.split('=')[1];
+      poolInv[pool] = inv;
+  }
+
+  for (var idx in invPoolList) {
+      var pool = invPoolList[idx];
+      inv = poolInv[pool];
+      if (winMerge && (pool == 'WIN' || pool == 'CWA' || pool == 'CWB' || pool == 'CWC' || pool == 'IWN')) {
+          if (winMergeID == mergedPoolName[pool + '_' + curRaceNo])
+              inv = poolInv[winMergeID];
+      }
+
+      if (fctTceTriMerge && (pool == 'FCT' || pool == 'TCE' || pool == 'TRI')) {
+          if (fctTceTriMergeID == mergedPoolName[pool + '_' + curRaceNo])
+              inv = poolInv[fctTceTriMergeID];
+      }
+
+      if (qttMerge && (pool == 'F-F' || pool == 'QTT')) {
+          if (qttMergeID == mergedPoolName[pool + '_' + curRaceNo])
+              inv = poolInv[qttMergeID];
+      }
+      if ($('#poolInvPoolTot' + pool).length > 0) {
+          $('#poolInvPoolTot' + pool).html('$ ' + addComma(inv));
+          if (singleRacePool.indexOf(pool) >= 0)
+              singleTotal += parseInt(inv, 10);
+          allTotal += parseInt(inv, 10);
+      }
+  }
+          
+    $('#poolInvPoolTotSUM').html('<strong class="racingBold">$ ' + addComma(singleTotal.toString()) + '</strong>');
+    $('#poolInvPoolTotTOTALSUM').html('<strong class="racingBold">$ ' + addComma(allTotal.toString()) + '</strong>');
+
+
+}
+
+function handleOddPushForPoolTotal(){
+   poolInvPoolTotRefreshOddsOddsPush();
+}
+
+
+
+</script>
+
+    </div>
+    <div>
+        <div id="cbRemark2"></div>
+    </div>
+    <div id="rsCalBtm" style="border-bottom:3px solid #4A8CC1;"></div>
+</div>
+
+<script type="text/javascript">
+
+var poolSellStatus = '1@@@@@@@@@;WIN;PLA;W-P;QIN;QPL;QQP;FCT;TRI;D-T;DBL;TBL;TCE;6UP;F-F;QTT;'.split('@@@');
+var winOddsByRace = '144908@@@@@@@@@WIN;1=14=0;2=24=0;3=45=0;4=15=0;5=6.8=0;6=18=0;7=15=0;8=2.0=1;9=15=0;10=9.4=0;11=18=0;12=26=0#PLA;1=3.8=0;2=5.0=0;3=10=0;4=4.4=0;5=1.9=0;6=5.3=0;7=4.5=0;8=1.3=1;9=3.0=0;10=2.5=0;11=3.7=0;12=4.7=0'.split('@@@');
+var normalRunnerList = [[],[],[],[{"num":1,"id":"20231122HV03D359","nameEn":"GALLANT CROWN","nameCh":"冠寶駒","horseId":"HK_2019_D359","name":"GALLANT CROWN","jockeyCode":"YML","jockeyNameEn":"M L Yeung","jockeyNameCh":"楊明綸","jockeyName":"M L Yeung","trainerCode":"HDA","trainerNameEn":"D A Hayes","trainerNameCh":"大衛希斯","trainerName":"D A Hayes","horseWeight":"1077","handicapWeight":"135","runnerRating":"60","intRating":"-","gear":"B","lastSixRun":"10/11/12/13/11/1","barDraw":"4","saddleCloth":null,"brandNum":"D359","brandColor":"D359","standbyStatus":"N","apprenticeAllowance":"","scratched":false,"scratchedGroup":false,"Members":[],"priority":"Y","trumpCard":"N","preference":"2"},{"num":2,"id":"20231122HV03G292","nameEn":"OUR LUCKY GLORY","nameCh":"多利神駒","horseId":"HK_2021_G292","name":"OUR LUCKY GLORY","jockeyCode":"AA","jockeyNameEn":"A Atzeni","jockeyNameCh":"艾兆禮","jockeyName":"A Atzeni","trainerCode":"RW","trainerNameEn":"J Richards","trainerNameCh":"黎昭昇","trainerName":"J Richards","horseWeight":"1051","handicapWeight":"132","runnerRating":"57","intRating":"-","gear":"SR/TT","lastSixRun":"7/6/10/4/6/12","barDraw":"5","saddleCloth":null,"brandNum":"G292","brandColor":"G292","standbyStatus":"N","apprenticeAllowance":"","scratched":false,"scratchedGroup":false,"Members":[],"priority":"N","trumpCard":"N","preference":"1"},{"num":3,"id":"20231122HV03H087","nameEn":"CAN'T GO WONG","nameCh":"獎星","horseId":"HK_2022_H087","name":"CAN'T GO WONG","jockeyCode":"HEL","jockeyNameEn":"L Hewitson","jockeyNameCh":"希威森","jockeyName":"L Hewitson","trainerCode":"LFC","trainerNameEn":"F C Lor","trainerNameCh":"羅富全","trainerName":"F C Lor","horseWeight":"1158","handicapWeight":"131","runnerRating":"56","intRating":"-","gear":"V/TT","lastSixRun":"12/6/12/8/10/6","barDraw":"10","saddleCloth":null,"brandNum":"H087","brandColor":"H087","standbyStatus":"N","apprenticeAllowance":"","scratched":false,"scratchedGroup":false,"Members":[],"priority":"N","trumpCard":"N","preference":"1"},{"num":4,"id":"20231122HV03H188","nameEn":"RED HARE KING","nameCh":"赤兔猴王","horseId":"HK_2022_H188","name":"RED HARE KING","jockeyCode":"CML","jockeyNameEn":"M Chadwick","jockeyNameCh":"蔡明紹","jockeyName":"M Chadwick","trainerCode":"CAS","trainerNameEn":"A S Cruz","trainerNameCh":"告東尼","trainerName":"A S Cruz","horseWeight":"1087","handicapWeight":"131","runnerRating":"56","intRating":"-","gear":"TT","lastSixRun":"3/8/8/10/4/5","barDraw":"11","saddleCloth":null,"brandNum":"H188","brandColor":"H188","standbyStatus":"N","apprenticeAllowance":"","scratched":false,"scratchedGroup":false,"Members":[],"priority":"N","trumpCard":"N","preference":"1"},{"num":5,"id":"20231122HV03G410","nameEn":"MASTER TORNADO","nameCh":"馬梟雄","horseId":"HK_2021_G410","name":"MASTER TORNADO","jockeyCode":"TEK","jockeyNameEn":"K Teetan","jockeyNameCh":"田泰安","jockeyName":"K Teetan","trainerCode":"SWY","trainerNameEn":"W Y So","trainerNameCh":"蘇偉賢","trainerName":"W Y So","horseWeight":"1181","handicapWeight":"130","runnerRating":"55","intRating":"-","gear":"B/TT","lastSixRun":"4/10/5/3/10/4","barDraw":"1","saddleCloth":null,"brandNum":"G410","brandColor":"G410","standbyStatus":"N","apprenticeAllowance":"","scratched":false,"scratchedGroup":false,"Members":[],"priority":"N","trumpCard":"Y","preference":"1"},{"num":6,"id":"20231122HV03E176","nameEn":"CONCERTO","nameCh":"協奏曲","horseId":"HK_2020_E176","name":"CONCERTO","jockeyCode":"FEL","jockeyNameEn":"L Ferraris","jockeyNameCh":"霍宏聲","jockeyName":"L Ferraris","trainerCode":"TKH","trainerNameEn":"K H Ting","trainerNameCh":"丁冠豪","trainerName":"K H Ting","horseWeight":"1039","handicapWeight":"129","runnerRating":"54","intRating":"-","gear":"XB/TT","lastSixRun":"5/5/1/1/5/8","barDraw":"12","saddleCloth":null,"brandNum":"E176","brandColor":"E176","standbyStatus":"N","apprenticeAllowance":"","scratched":false,"scratchedGroup":false,"Members":[],"priority":"N","trumpCard":"Y","preference":"2"},{"num":7,"id":"20231122HV03H312","nameEn":"CLUB SODA","nameCh":"健者","horseId":"HK_2022_H312","name":"CLUB SODA","jockeyCode":"PZ","jockeyNameEn":"Z Purton","jockeyNameCh":"潘頓","jockeyName":"Z Purton","trainerCode":"SJJ","trainerNameEn":"J Size","trainerNameCh":"蔡約翰","trainerName":"J Size","horseWeight":"1147","handicapWeight":"127","runnerRating":"52","intRating":"-","gear":"","lastSixRun":"11","barDraw":"2","saddleCloth":null,"brandNum":"H312","brandColor":"H312","standbyStatus":"N","apprenticeAllowance":"","scratched":false,"scratchedGroup":false,"Members":[],"priority":"N","trumpCard":"N","preference":"1"},{"num":8,"id":"20231122HV03G466","nameEn":"M UNICORN","nameCh":"獨角獸","horseId":"HK_2021_G466","name":"M UNICORN","jockeyCode":"HCY","jockeyNameEn":"C Y Ho","jockeyNameCh":"何澤堯","jockeyName":"C Y Ho","trainerCode":"FC","trainerNameEn":"C Fownes","trainerNameCh":"方嘉柏","trainerName":"C Fownes","horseWeight":"1206","handicapWeight":"124","runnerRating":"49","intRating":"-","gear":"H/P/TT","lastSixRun":"4/1/2/5/8/3","barDraw":"8","saddleCloth":null,"brandNum":"G466","brandColor":"G466","standbyStatus":"N","apprenticeAllowance":"","scratched":false,"scratchedGroup":false,"Members":[],"priority":"Y","trumpCard":"N","preference":"2"},{"num":9,"id":"20231122HV03G133","nameEn":"HAPPY ANGEL","nameCh":"但求快活","horseId":"HK_2021_G133","name":"HAPPY ANGEL","jockeyCode":"DMK","jockeyNameEn":"K De Melo","jockeyNameCh":"董明朗","jockeyName":"K De Melo","trainerCode":"NPC","trainerNameEn":"P C Ng","trainerNameCh":"伍鵬志","trainerName":"P C Ng","horseWeight":"1105","handicapWeight":"122","runnerRating":"47","intRating":"-","gear":"B","lastSixRun":"5/5/1/5/3/2","barDraw":"3","saddleCloth":null,"brandNum":"G133","brandColor":"G133","standbyStatus":"N","apprenticeAllowance":"","scratched":false,"scratchedGroup":false,"Members":[],"priority":"N","trumpCard":"N","preference":"1"},{"num":10,"id":"20231122HV03G172","nameEn":"PALACE PAL","nameCh":"大登殿","horseId":"HK_2021_G172","name":"PALACE PAL","jockeyCode":"BA","jockeyNameEn":"A Badel","jockeyNameCh":"巴度","jockeyName":"A Badel","trainerCode":"HAD","trainerNameEn":"D J Hall","trainerNameCh":"賀賢","trainerName":"D J Hall","horseWeight":"965","handicapWeight":"120","runnerRating":"45","intRating":"-","gear":"V","lastSixRun":"3/3/4/9/4/4","barDraw":"6","saddleCloth":null,"brandNum":"G172","brandColor":"G172","standbyStatus":"N","apprenticeAllowance":"","scratched":false,"scratchedGroup":false,"Members":[],"priority":"N","trumpCard":"N","preference":"1"},{"num":11,"id":"20231122HV03G125","nameEn":"SURE JOYFUL","nameCh":"得意佳作","horseId":"HK_2021_G125","name":"SURE JOYFUL","jockeyCode":"PMF","jockeyNameEn":"M F Poon","jockeyNameCh":"潘明輝","jockeyName":"M F Poon","trainerCode":"YPF","trainerNameEn":"P F Yiu","trainerNameCh":"姚本輝","trainerName":"P F Yiu","horseWeight":"1068","handicapWeight":"118","runnerRating":"43","intRating":"-","gear":"","lastSixRun":"3/6/1/8/7/10","barDraw":"7","saddleCloth":null,"brandNum":"G125","brandColor":"G125","standbyStatus":"N","apprenticeAllowance":"2","scratched":false,"scratchedGroup":false,"Members":[],"priority":"N","trumpCard":"N","preference":"2"},{"num":12,"id":"20231122HV03E194","nameEn":"ARTHUR'S KINGDOM","nameCh":"符號","horseId":"HK_2020_E194","name":"ARTHUR'S KINGDOM","jockeyCode":"MHT","jockeyNameEn":"H T Mo","jockeyNameCh":"巫顯東","jockeyName":"H T Mo","trainerCode":"TYS","trainerNameEn":"Y S Tsui","trainerNameCh":"徐雨石","trainerName":"Y S Tsui","horseWeight":"1007","handicapWeight":"116","runnerRating":"41","intRating":"-","gear":"H/XB/TT","lastSixRun":"6/12/7/11/14/12","barDraw":"9","saddleCloth":null,"brandNum":"E194","brandColor":"E194","standbyStatus":"N","apprenticeAllowance":"2","scratched":false,"scratchedGroup":false,"Members":[],"priority":"N","trumpCard":"Y","preference":"2"}],[],[],[],[],[]];
+
+</script>
+
+<script type="text/javascript">
+///////////////////////////////////////////////
+// UI Related
+///////////////////////////////////////////////
+function switchAllUpPage() {
+    var allupObj = {};
+    var selectPoolCnt = 0;
+
+    if (wpTableRS.getSelCount('WIN') > 0) {
+        allupObj = {
+            bType: 'WIN',
+            legSels: wpTableRS.state.legSels['WIN'],
+            fieldSels: wpTableRS.state.fieldSels['WIN']
+        };
+        selectPoolCnt++;
+    }
+    if (wpTableRS.getSelCount('PLA') > 0) {
+        allupObj = {
+            bType: 'PLA',
+            legSels: wpTableRS.state.legSels['PLA'],
+            fieldSels: wpTableRS.state.fieldSels['PLA']
+        };
+        selectPoolCnt++;
+    }
+    if (wpTableRS.getSelCount('W-P') > 0) {
+        allupObj = {
+            bType: 'W-P',
+            legSels: wpTableRS.state.legSels['W-P'],
+            fieldSels: wpTableRS.state.fieldSels['W-P']
+        };
+        selectPoolCnt++;
+    }
+
+    if (selectPoolCnt > 1) {
+        alert(onePoolOnlyLbl);
+        $('#allupCheckbox').prop('checked', false);
+        return;
+    }
+    else if (selectPoolCnt == 1) {
+        SetDataStore('alupSel', JSON.stringify([allupObj]));
+    }
+
+    var para = {};
+    para['date'] = mtgDate;
+    para['venue'] = mtgVenue;
+    para["raceno"] = curRaceNo;
+    switchTo('racing', 'pages/odds_wp_alup', curLang, para);
+}
+
+function initOddsTable() {
+    try {
+        redrawWinPlaceTable();
+        loadRaceColorIndex();
+    }
+    catch (e) {
+        console.log(e);
+    }
+    displayComingleMessage();
+    redrawRSCal();
+}
+
+function displayComingleMessage() {
+    $('#cbMsg').html('');
+    $('#cbTable').html('');
+    $('#cbRemark1').html('');
+    $('#cbRemark2').html('');
+
+    var lg = curLang == "ch" ? "C" : "E";
+    if (obStatusByRace[curRaceNo] != '') {
+        var msgs = obMsg[obStatusByRace[curRaceNo]];
+        if (obCoupleByRace[curRaceNo] != null && obCoupleByRace[curRaceNo] != '') {
+            if (msgs["NOTE1_" + lg] != '')
+                $('#cbMsg').html(msgs["NOTE1_" + lg]);
+            $('#cbTable').html(getCoupleTable(curRaceNo));
+        }
+        if (msgs["NOTE2_" + lg] != '')
+            $('#cbRemark1').html(msgs["NOTE2_" + lg]);
+
+        if (showInvComingleMsg) {
+            var remStr = new StringBuffer();
+            if (msgs["NOTE3_" + lg] != '')
+                remStr.append('<div style="padding:2px 2px 2px 2px">').append(msgs["NOTE3_" + lg]).append('</div>');
+            if (msgs["NOTE4_" + lg] != '')
+                remStr.append('<div style="padding:2px 2px 2px 2px">').append(msgs["NOTE4_" + lg]).append('</div>');
+            $('#cbRemark2').html(remStr.toString());
+        }
+    }
+}
+
+///////////////////////////////////////////////
+// Add to betslip related
+///////////////////////////////////////////////
+var ret = 1;
+function processBet(toComponent) {
+  var noOfBetTypeSelected = 0;
+  if(isQRPortal) {
+      if ($.inArray(true, wpTableRS.state.legSels['WIN']) > -1 || wpTableRS.state.fieldSels['WIN'])
+        noOfBetTypeSelected++;
+      if ($.inArray(true, wpTableRS.state.legSels['PLA']) > -1 || wpTableRS.state.fieldSels['PLA'])
+        noOfBetTypeSelected++;
+      if ($.inArray(true, wpTableRS.state.legSels['W-P']) > -1 || wpTableRS.state.fieldSels['W-P'])
+        noOfBetTypeSelected++;
+      if(noOfBetTypeSelected>1) {
+        alert(only1BetAllowLbl);  
+        return false;
+      }
+  }
+  var isSuccess = false;
+  var betObj1 = processSinglePoolBet(toComponent, 'WIN');
+  var betstatus1 = ret;
+  var betObj2 = processSinglePoolBet(toComponent, 'PLA');
+  var betstatus2 = ret;
+  var betObj3 = processSinglePoolBet(toComponent, 'W-P');
+  var betstatus3 = ret;
+    var betCnt = betObj1.getSelectionSize()
+        + betObj2.getSelectionSize()
+        + betObj3.getSelectionSize();
+
+  isSuccess = true;
+  if ( betCnt > 0 ) {
+    if ( toComponent!='betslip' ){
+      updateBetCalDisplay(toComponent, betCnt);
+    }  
+  }
+  else {
+    alert(insuffSLbl.replace('#', curRaceNo));  
+    isSuccess = false;
+  }
+  
+  if(betstatus1 != 1 || betstatus2 != 1 || betstatus3 != 1){
+    isSuccess = false;
+  }
+  
+  return isSuccess;
+}
+
+function processSinglePoolBet(toComponent, poolS) {
+    var betObj = wpTableRS.createBetObject(poolS);
+    ret = 1;
+    if (toComponent == 'betslip' && betObj.getSelectionSize() > 0) {
+        ret = addSelExFO(betObj);
+        if (ret == 1) {
+            wpTableRS.clearCheckBox(poolS);
+        }
+    }
+    return betObj;
+}
+
+///////////////////////////////////////////////
+// Odds Auto Refresh Related
+///////////////////////////////////////////////
+function refreshAllDoc() {
+    scratchLoadDoc();
+    poolInvPoolTotLoadDoc();
+}
+
+function refreshOddsDoc() {
+    wpOddsLoadDoc(curRaceNo, curRaceNo, dataType);
+}
+
+function changeDataType(type) {
+  if(dataType != type){
+      $('#oddsRefreshTime').html('');
+  }
+  dataType = type;
+  if(oddsPushStatus!='push' || dataType!='') {
+    refreshOddsDoc();
+  }
+  else {
+      updateRacingPushDisplay();
+  }
+}
+
+</script>
+
+<script type="text/javascript">
+    function rsInit() {
+        //setTopBannerFrame('racing', 'pages/odds_wp', curLang);
+    }
+    
+    function rcBannerInit() {
+        setTopBannerFrame('racing', 'pages/odds_wp', curLang);
+    }
+</script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottomBannerDiv" class="bottomMenu">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td style="padding:0px 0px 7px 0px;">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr class="bottomtopbannerdisplay" style="display:none">
+					<td width="120" align="left"><a id="bottomBanner_lnk_mcs" href="http://mcs.hkjcfootball.com/" target="_blank"><img id="bottomBanner_img_mcs" src="/root2/bet_main/ch/images/btn_media.gif" width="120" height="40" border="0"></a></td>
+					<td align="left"><img src="/info/Include/Images/spacer.gif" width="5" height="5" border="0"></td>
+					<td align="left" colspan="9"><img id="bottomBanner_img_phone" src="/root2/bet_main/ch/images/btn_phone.gif" width="624" height="40" border="0"></td>
+				</tr>
+				<tr valign="top"> 
+					<td width="120"><a id="banner1a" href="Javascript:;" onClick="return false;"><img name="banner1" id="banner1" src="/info/Include/images/spacer.gif" border="0" WIDTH="120" HEIGHT="50"></a></td>
+					<td><img src="/info/Include/images/spacer.gif" width="5" height="50"></td>
+					<td width="120"><a id="banner2a"  href="Javascript:;" onClick="return false;"><img name="banner2" id="banner2" src="/info/Include/images/spacer.gif" border="0" WIDTH="120" HEIGHT="50"></a></td>
+					<td><img src="/info/Include/images/spacer.gif" width="5" height="50"></td>
+					<td width="120"><a id="banner3a" href="Javascript:;" onClick="return false;"><img name="banner3" id="banner3" src="/info/Include/images/spacer.gif" border="0" WIDTH="120" HEIGHT="50"></a></td>
+					<td><img src="/info/Include/images/spacer.gif" width="5" height="50"></td>
+					<td width="120"><a id="banner4a" href="Javascript:;" onClick="return false;"><img name="banner4" id="banner4" src="/info/Include/images/spacer.gif" border="0" WIDTH="120" HEIGHT="50"></a></td>
+					<td><img src="/info/Include/images/spacer.gif" width="5" height="50"></td>
+					<td width="120"><a id="banner5a" href="Javascript:;" onClick="return false;"><img name="banner5" id="banner5" src="/info/Include/images/spacer.gif" border="0" WIDTH="120" HEIGHT="50"></a></td>
+					<td><img src="/info/Include/images/spacer.gif" width="5" height="50"></td>
+					<td width="120"><a id="banner6a" href="Javascript:;" onClick="return false;"><img name="banner6" id="banner6" src="/info/Include/images/spacer.gif" border="0" WIDTH="120" HEIGHT="50"></a></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</div>
+
+    <div id="rgpDiv" style="width:744px; background-color:#ffffff;margin:5px 6px 0px 6px;padding:10px 10px 10px 10px;margin-bottom:150px;">
+	<div id="rgpImage"></div>
+	<div style="padding:9px 2px 0px 2px;">
+		<div id="rgpLinks" style="float:left"></div>
+		<div id="rgpCopyRight" style="float:right"></div>
+		<div style="clear:both"></div>
+	</div>
+</div>
+
+</div>
+<div id="betslipDiv" class="noPrint">
+	<div id="newRedirectDiv" onclick="openNewWebsiteBypassLogout('');" style="display:none"><img src="/info/include/images/newEwinIcon.svg" /><span style="padding: 0px 8px"></span></div>
+	<div id="betslipDisableDiv"></div>
+	<div id="betslipDimmedDiv"></div>
+	<div id="betslipDimmedText"></div>
+	<div id="betslipSound" style="display:none"></div>
+	<div id="divBetSlipMinimize" style="display:none" onclick="OnClickRestore()">
+		<div id="divBetSlipMinimizeText"></div>
+	</div>
+	<div id="divBetSlipNormal">
+		<div id="divAccInfo" onkeydown="return onKeyDown(event, true, 'accInfo');">
+			<div id="errormsg" onclick="javascript:HideError(1)"></div>
+			<div class="topYellowBar"></div>
+			<div id="divAccInfoLogout" class="accInfoBg">
+				<div class="accInfoTable">
+					<div class="betslipRow">
+						<div class="accInfoCellLogo" onmouseover="ShowServerId(this)"></div>
+						<div class="accInfoCellInput">
+							<div id="minimizeButton" class="minimizeButton" onclick="OnClickMinimize()"></div>
+							<div id="topHelpButton" class="topHelpButton" onclick="OnClickHelp()"></div>
+							<div style="clear:both"></div>
+							<div style="padding-top:3px"><input name="account" id="account" type="text" value="" maxlength="15" class="accInfoInputField" style="width:152px; height:16px;" tabindex="1" autocomplete="off"></div>
+							<div style="padding-top:4px; float:left">
+								<input type="text" name="passwordInput1" id="passwordInput1" value="" class="accInfoInputField" style="width:99px; height: 16px; display: block;" tabindex="2">
+								<input type="password" name="password" id="password" maxlength="20" class="inputField1" style="width:99px; height:16px; display:none;" onblur="if ( $(this).val()=='' ) { $(this).hide(); $('#passwordInput1').show(); }" tabindex="-1">
+							</div>
+							<div id="loginButton" class="loginButton" onclick="OnClickLogin()" tabindex="3"></div>
+							<div id="loginSSONextButton" class="loginSSONextButton" onclick="OnClickNext()" tabindex="4"></div>
+							<div style="clear:both"></div>
+						</div>
+					</div>
+				</div>
+				<div class="accInfoTable2" style="padding-top:5px">
+					<div class="betslipRow">
+						<div class="accInfoCell regDropdown" id="linkAccInfoRegister" onclick="OnClickRegisterNow()">
+						</div>
+						<div class="accInfoCellStroke"></div>
+						<div class="accInfoCell" id="linkPersonalSettings" onclick="OnClickPersonalSettings()"></div>
+						<div class="accInfoCellStroke"></div>
+						<div class="accInfoCell" id="linkCannotLogin" onclick="OnClickCannotLogin()"></div>
+					</div>
+				</div>
+			</div>
+			<div id="divAccInfoLogin" class="accInfoBg" style="display:none">
+				<div class="accInfoTable">
+					<div class="betslipRow">
+						<div class="accInfoCellLogo" onmouseover="ShowServerId(this)"></div>
+						<div style="display:table-cell">
+							<div class="accInfoCellNo">
+								<div id="txtAccNo"></div>
+								<div id="valueAccNo"></div>
+								<div id="bsPeNoteIcon"></div>
+							</div>
+							<div class="accInfoCellButton">
+								<div id="minimizeButtonLogin" class="minimizeButton" onclick="OnClickMinimize()"></div>
+								<div id="topHelpButtonLogin" class="topHelpButton" onclick="OnClickHelp()"></div>
+								<div id="logoutButton" class="logoutButton" onclick="OnClickLogout()"></div>
+							</div>
+						</div>
+					</div>
+					<div class="betslipRow">
+						<div style="display:table-cell"></div>
+						<div class="accInfoCellName">
+							<div style="width:151px">
+								<div id="valueAccName"></div>
+								<div>
+									<div id="valueAccBal" style="display:inline-block;vertical-align:top;margin-top:1px"></div>
+									<div id="buttonAccBal" onclick="OnClickRefreshBalance()"></div>
+								</div>
+							</div>
+						</div>
+						<div style="display:table-cell; width:1px"></div>
+					</div>
+				</div>
+
+
+				<div class="accInfoTable2">
+					<div class="betslipRow">
+						<div class="accInfoCell" id="linkAccStmt" onclick="OnClickAccountRecord()"></div>
+						<div class="accInfoCellStroke"></div>
+						<div class="accInfoCell regDropdown" id="linkPersonalSettingsLogin" onclick="OnClickPersonalSettingsLogin()"></div>
+						<div class="accInfoCellStroke"></div>
+						<div class="accInfoCell" id="linkFundsTransfer" onclick="OnClickFundTransfer()"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="divSlip">
+			<div id="errormsgMiddle" onclick="javascript:HideError(2)">
+				<div class="errorMsgClodeButton"></div>
+				<div style="clear: both"></div>
+				<div id="errMsgMiddleTxt"></div>
+			</div>
+
+			<div class="betslipRow">
+				<div class="middleYellowBar"></div>
+				<div class="middleYellowBar"></div>
+			</div>
+			<div class="betslipRow">
+				<div id="slipToggleButton" class="slipExpand" onclick="slipToogle();"></div>
+				<div class="slipBetTable">
+					<div id="multiplePanel" style='display:none'>
+						<div class="betslipRow">
+							<div class="slipActivePanel slipMultiPanel">A</div>
+							<div class="slipInactivePanel slipMultiPanel">B</div>
+							<div class="slipInactivePanel slipMultiPanel">C</div>
+							<div class="slipInactivePanel slipMultiPanel">D</div>
+							<div style="width:1px"></div>
+						</div>
+					</div>
+					<div id="divBetLayer" onscroll="collapseUnitBetDropdown();"></div>
+					<div class="slipBetPanel">
+						<div class="slipBetPanelRow">
+							<div class="slipStrokeOrange"></div>
+							<div id="divAlupFormulaLabel" class="slipBottomCellLeft"></div>
+							<div id="bottomHelpButton" class="bottomHelpButton" onclick="OnClickAllupHelp()"></div>
+							<div class="clear"></div>
+						</div>
+						<div class="slipBetPanelRow">
+							<div id="bsAddBetButton" class="slipAddBet" onclick="CreateAndAddAllUp()"></div>
+							<div class="slipAlupUpDown">
+								<div class="slipAlupUp" onclick="inputAllUpValueChanged(10)"></div>
+								<div class="slipAlupDown" onclick="inputAllUpValueChanged(-10)"></div>
+							</div>
+							<div class="slipBottomCellRight" style="padding-left:1px">
+								<input type="text" class="inputField1" style="width:55px; height:19px; background-color: #FFFFFF" onblur="CheckAlupBoxUnitBet(this);" disabled id="inputAllUp">
+							</div>
+							<div class="slipBottomCellRight">
+								<select name="selFormula" id="sel_formula" class="select1" style="width:50px;height:21px" disabled></select>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="slipDottedLine"></div>
+						<div class="slipBetPanelRow">
+							<div id="fldTotalNoOfBets" class="slipBottomAmountLeft"></div>
+							<div id="total_no_of_bets" class="slipBottomAmountRight"></div>
+							<div class="clear"></div>
+						</div>
+						<div class="slipBetPanelRow">
+							<div id="fldTotalAmount" class="slipBottomAmountLeft"></div>
+							<div id="fld_total_bet_amount" class="slipBottomAmountRight"></div>
+							<div class="clear"></div>
+						</div>
+						<div class="slipBetPanelRow">
+							<div id="bsSendPreviewButton" class="slipSendPreview" onclick="OnClickPreview()"></div>
+							<div id="bsDeleteBetButton" class="slipDeleteBet" onclick="OnClickReset()"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="betslipRow">
+				<div class="bottomYellowBar"></div>
+				<div class="bottomYellowBar"></div>
+			</div>
+
+			<div id="divEKBA" onkeydown="return onKeyDown(event, true, 'ekba');">
+				<div class="topYellowBar"></div>
+				<div class="ekbaGrayBar"></div>
+				<div class="ekbaContainer">
+					<div id="ekbaDivTitle"></div>
+					<div id="ekbaSeqQuestion"></div>
+					<div class="ekbaFields">
+						<input id="ekbaDivInput" name="ekbaDivInput" type="text" class="text" maxlength="50" autocomplete="off" tabindex="4" /><span onclick="OnClickChgSecQuestion()" id="txtForgetWebPass"></span>
+						<div id="ekbaDivError"></div>
+					</div>
+					<div id="divEKBADefaultButton" class="ekbaFooter" style="display:block">
+						<div class="cancelButton" onclick="OnClickLoginEKBACancel()" id="pic_cancel"></div>
+						<div class="confirmButton" onclick="OnClickLoginEKBA()" id="pic_confirm" tabindex="5"></div>
+					</div>
+					<div id="divEKBASSOButton" class="ekbaFooter" style="display:none">
+						<div class="backButton" onclick="OnClickLoginEKBABack()" id="pic_backSSO"></div>
+						<div class="logoutEKBAButton" onclick="OnClickLoginEKBALogout()" id="pic_logoutSSO"></div>
+						<div class="confirmButton" onclick="OnClickLoginEKBA()" id="pic_confirmSSO" tabindex="6"></div>
+					</div>
+				</div>
+				<div class="ekbaGrayBar"></div>
+				<div class="topYellowBar"></div>
+			</div>
+
+			<div id="divEWallet" style="display:none; border-left: 1px solid #a3a3a3;">
+				<div class="topYellowBar"></div>
+				<div class="ekbaGrayBar"></div>
+				<div class="container">
+					<h2>
+						<div id="eWalletDivTitle"></div>
+					</h2>
+					<p>
+						<div id="eWalletMsg"></div>
+					</p>
+					<div id="divEWalletLaterButton" class="BLfooter" style="display:block">
+						<span style="float:left; margin-left:280px; margin-right:10px; display:inline;"><a class="eWalletLater" href="#" onclick="OnClickEWalletCancel();return false;"></a></span>
+						<span style="float:right; margin-left:10px; margin-right:10px; display:inline;"><a class="eWalletUpgrade" href="#" onclick="OnClickEWalletUpgrade();return false;"></a></span>
+					</div>
+				</div>
+				<div class="ekbaGrayBar"></div>
+				<div class="topYellowBar"></div>
+			</div>
+
+			<div id="divDisclaimer" onkeydown="return onKeyDown(event, true, 'disclaimer');" tabindex="-1">
+				<div class="topYellowBar"></div>
+				<div class="ekbaGrayBar"></div>
+				<div id="disclaimerHeader"></div>
+				<div id="disclaimerText"></div>
+				<div id="disclaimerProceed" onclick="ShowDisclaimer(false, true)" class="disclaimerEnterButton"></div>
+				<div style="clear:both"></div>
+				<div class="ekbaGrayBar"></div>
+				<div class="topYellowBar"></div>
+			</div>
+
+			<div id="divIdleAlert">
+				<div id="divIdleAlertLogoutTips"></div>
+				<div id="divIdleAlertLogoutTimeTips"></div>
+				<div onclick="idleAlertClose()" id="divIdleAlertStay"></div>
+				<div onclick="idleAlertLogout(false)" id="divIdleAlertLogout"></div>
+				<div id="divIdleAlertSound" style="height:0"></div>
+			</div>
+
+			<div id="divBetPreview">
+				<div class="topYellowBar"></div>
+				<div class="ekbaGrayBar"></div>
+				<div class="divBetTable">
+					<div class="betHeader">
+						<div id="betHeaderCell1"></div>
+						<div id="betHeaderCell2"></div>
+						<div id="betHeaderCell3"></div>
+						<div id="betHeaderPrint" onclick="betReplyPrint()"></div>
+						<div style="clear:both"></div>
+					</div>
+					<div id="divReplyTotal" class="replyBottomRow">
+						<div id="txtBetTotalReply"></div>
+						<div id="valueBetTotalReply"></div>
+						<div style="clear:both"></div>
+					</div>
+					<div id="betSubHeader"></div>
+					<div id="previewTable"></div>
+					<div id="replyTable"></div>
+				</div>
+				<div id="divPreviewBottom">
+					<div class="previewDeleteDiv">
+						<div class="previewDeleteDimButton" onclick="OnClickDeleteBet()" id="previewDel"></div>
+					</div>
+					<div class="previewInplayMsgDiv">
+						<div class="inplayMsgTxt"></div>
+					</div>
+					<div class="previewSendDiv">
+						<div>
+							<div class="previewSendCell" id="txtBetTotal"></div>
+							<div class="previewSendCell" id="valueBetTotal"></div>
+							<div style="clear:both"></div>
+						</div>
+						<div>
+							<div class="previewCloseButton previewSendCell" onclick="OnClickClosePreview()" id="previewClose"></div>
+							<div class="previewSendButton previewSendCell" onclick="OnClickConfirmBet()" id="previewSend"></div>
+						</div>
+					</div>
+					<div style="clear:both"></div>
+				</div>
+				<div id="divReplyBottom">
+					<div class="previewInplayMsgDiv">
+						<div class="inplayMsgTxt"></div>
+					</div>
+					<div class="replyBottomDiv">
+						<div>
+							<div style="float:right; margin-left:10px; display:none;" class="previewSendButton previewSendCell" onclick="OnClickResendConfirmBet()" id="replySend"></div>
+							<div class="replyRecallButton" onclick="OnClickCloseAndRecall()" id="replyRecall"></div>
+							<div class="replyCloseButton" onclick="OnClickClose()" id="replyClose"></div>
+						</div>
+						<div style="clear:both"></div>
+					</div>
+				</div>
+				<div class="ekbaGrayBar"></div>
+				<div class="topYellowBar"></div>
+			</div>
+
+		</div>
+
+		<div id="divRegDropdownMenu" class="regDropdown tDisplayNone">
+			<ul>
+				<li><a href="javascript:onClickRegonline();" class="content"><span id="regOnline"></span></a></li>
+				<li><a href="javascript:onClickApplybet();" class="content"><span id="regApply"></span></a></li>
+			</ul>
+		</div>
+
+		<div id="divSettingsMenu" class="regDropdown tDisplayNone">
+			<ul>
+				<li><a href="javascript:OnClickChgWebPassword();" class="content"><span id="txtChgWebPassword"></span></a></li>
+				<li><a href="javascript:OnClickChgSecQuestion();" class="content"><span id="txtChgSecQuestion"></span></a></li>
+				<li><a href="javascript:OnClickChgWebProfile();" class="content"><span id="txtChgWebProfile"></span></a></li>
+				<li><a href="javascript:OnClickPersonalSettings();" class="content"><span id="txtPersonalSettings"></span></a></li>
+				<li style="display:none"><a href="javascript:OnClickFootballLive();" class="content"><span id="txtFootballLive"></span></a></li>
+			</ul>
+		</div>
+	</div>
+
+</div>
+
+
+<div id="divBetSlipOverlay">
+	<div id="divStmtYellowNote"></div>
+
+	<div id="divPersonalSetting">
+		<div class="topYellowBar"></div>
+		<div class="boCenter">
+			<div class="boHeader" id="txtSettingHeader"></div>
+			<div id="divSettingTable">
+				<div id="settingTable">
+					<div id="settingHeader1" class="settingHeaderOpen" onclick="settingToggleTable(1)"></div>
+					<div id="settingBody1" class="settingTable"></div>
+					<div id="settingHeader2" class="settingHeaderOpen" onclick="settingToggleTable(2)"></div>
+					<div id="settingBody2" class="settingTable"></div>
+					<div id="settingHeader3" class="settingHeaderOpen" onclick="settingToggleTable(3)"></div>
+					<div id="settingBody3" class="settingTable"></div>
+					<div id="settingHeader4" class="settingHeaderOpen" onclick="settingToggleTable(4)"></div>
+					<div id="settingBody4" class="settingTable"></div>
+					<div id="settingHeader5" class="settingHeaderOpen" onclick="settingToggleTable(5)"></div>
+					<div id="settingBody5" class="settingTable"></div>
+					<div id="settingHeader6" class="settingHeaderOpen" onclick="settingToggleTable(6)"></div>
+					<div id="settingBody6" class="settingTable"></div>
+				</div>
+				<div id="divSettingBottom">
+					<div class="stmtCloseButton" id="settingClose" onclick="closeAllBetSlipOverlay()"></div>
+					<div class="settingDefaultButton" id="settingDefault" onclick="setDefaultAmt()"></div>
+					<div class="settingSaveButton" id="settingSave" onclick="saveAmt()" onmouseover="showDiv(this, 'setting', true);" onmouseout="showDiv(this, '', false);"></div>
+				</div>
+			</div>
+		</div>
+		<div class="topYellowBar"></div>
+	</div>
+
+	<div id="divStatement">
+		<div id="DivReceipt" style="background:rgba(0,0,0,0.5); width:100%;height:100%;position:absolute;text-align:center;z-index:10;display:none;top:0; left:0;" onclick="CloseReceipt()">
+			<div style="margin-top:20px;color:white;">
+				<a class="btnGray" id="btnDownload" style="width:60px; padding:5px;" onclick="downloadReceipt()"></a>
+				<br />
+				<img id="imgReceipt" />
+				<canvas id="canReceipt" style="display:none" />
+			</div>
+		</div>
+		<div class="topYellowBar"></div>
+		<div class="boCenter">
+			<div class="boHeader" id="txtAccRecordHeader"></div>
+			<div class="boSubheader">
+				<div class="boNav" id="linkAccountRecord" onclick="reloadAccountRecord()"></div>
+				<div class="boHelpButton" id="helpAccountRecord" onclick="OnClickHelpAccountRecord()">
+					<img src="/info/include/images/icon_help.gif" class="boHelpPic" />
+				</div>
+				<div class="strokeGray"></div>
+				<div class="boNav" id="linkCurSession" onclick="reloadCurSession()"></div>
+				<div class="boHelpButton" id="helpCurSession" onclick="OnClickHelpCurSession()">
+					<img src="/info/include/images/icon_help.gif" class="boHelpPic" />
+				</div>
+				<div class="strokeGray"></div>
+				<div class="boNav" id="linkRecall" onclick="reloadRecall()"></div>
+				<div class="boHelpButton" id="helpRecall" onclick="OnClickHelpRecall()">
+					<img src="/info/include/images/icon_help.gif" class="boHelpPic" />
+				</div>
+				<div style="clear:both"></div>
+			</div>
+
+			<div id="divAccountRecord">
+				<div id="divStatementSearchBox">
+					<div id="divSearchBlock1">
+						<div class="betslipRow">
+							<div class="searchDateCell1"><input name="dateType" id="radioToday" type="radio" value="0" style="margin:0px" checked></div>
+							<div class="searchDateCell2"><label for="radioToday" id="asToday"></label></div>
+						</div>
+						<div class="betslipRow">
+							<div class="searchDateCell1" style="padding-top:7px;"><input name="dateType" id="radioDateRange" type="radio" value="1" style="margin:0px"></div>
+							<div class="searchDateCell3">
+								<div>
+									<label for="radioDateRange" id="asFrom"></label> :
+									<label for="radioDateRange" id="asFromDay"></label>
+									<select id="FromDay" class="select2" style="width:50px" onchange="resetDate('From', 0)"></select>
+									/
+									<label for="radioDateRange" id="asFromMonth"></label>
+									<select id="FromMonth" class="select2" style="width:50px" onchange="resetDate('From', 1)"></select>
+									/
+									<label for="radioDateRange" id="asFromYear"></label>
+									<select id="FromYear" class="select2" style="width:60px" onchange="resetDate('From', 2)"></select>
+								</div>
+								<div>
+									<label for="radioDateRange" id="asTo"></label> :
+									<label for="radioDateRange" id="asTo_Day"></label>
+									<select id="ToDay" class="select2" style="width:50px" onchange="resetDate('To', 0)"></select>
+									/
+									<label for="radioDateRange" id="asToMonth"></label>
+									<select id="ToMonth" class="select2" style="width:50px" onchange="resetDate('To', 1)"></select>
+									/
+									<label for="radioDateRange" id="asToYear"></label>
+									<select id="ToYear" class="select2" style="width:60px" onchange="resetDate('To', 2)"></select>
+								</div>
+							</div>
+						</div>
+						<div id="asSelDtRange"></div>
+						<div class="betslipRow" id="lastDayOption">
+							<div class="searchDateCell1" style="padding-top:3px;">
+								<input name="dateType" id="radioLastDay" type="radio" value="2" style="margin:0px"></div>
+							<div class="searchDateCell2">
+								<label for="radioLastDay" id="seekLastDay"></label>
+								<select id="last_days" class="select2" style="width:50px" onchange="$('#radioLastDay').prop('checked', 'true');"></select>
+								<label for="radioLastDay" id="seekUnit"></label>
+							</div>
+						</div>
+					</div>
+					<div id="divSearchBlock2">
+						<div class="betslipRow">
+							<span id="asTxnType"></span> :
+							<select id="betType" class="select2" style="width:215px" onchange="resetBetAndTxnOptions(false)"></select>
+						</div>
+						<div class="betslipRow">
+							<span id="asDisplayType"></span> :
+							<select id="txnType" class="select2" style="width:215px" onchange="resetBetAndTxnOptions(false)"></select>
+						</div>
+						<div class="statementConfirmButton" id="stmtConfirmButton" onclick="OnClickStatementSearch()">
+						</div>
+					</div>
+
+				</div>
+
+				<div id="divStatementYellowHeader">
+					<div class="stmtMiddleHeader">
+						<div id="stmtPageNo"></div>
+						<div id="stmtAccBal"></div>
+						<div id="stmtAccNo"></div>
+						<div id="stmtTime"></div>
+						<div style="clear:both"></div>
+					</div>
+				</div>
+
+				<div id="divStatementTable">
+					<div id="stmtMsg"></div>
+					<div id="stmtHeader"></div>
+					<div id="stmtTable"></div>
+					<div id="divStmtBottom">
+						<div class="stmtCloseButton" id="stmtClose" onclick="closeAllBetSlipOverlay()"></div>
+						<div class="stmtNextDimButton" id="stmtNext" onclick="stmtNextPage()"></div>
+						<div class="stmtPrevDimButton" id="stmtPrev" onclick="stmtPrevPage()"></div>
+						<div id="stmtExportMenu">
+							<div id="stmtExportHtml" onclick="fileExport('html')"></div>
+							<div id="stmtExportText" onclick="fileExport('txt')"></div>
+						</div>
+						<div class="stmtExportButton" id="stmtExport" onmouseover="showDiv(this, 'save', true);" onmouseout="showDiv(this, '', false);" onclick="onclickStmtExport(this)" tabindex="-1">
+						</div>
+						<div class="stmtPrintButton" id="stmtPrint" onmouseover="showDiv(this, 'print', true);" onmouseout="showDiv(this, '', false);" onclick="onclickStmtPrint()"></div>
+						<div class="stmtNewSearchButton" id="stmtNewSearch" onclick="openSearchBox()"></div>
+					</div>
+				</div>
+			</div>
+
+			<div id="divCurSession">
+				<div id="divCurSessionYellowHeader">
+					<div class="curSessionNote">
+						<div id="curSessionNote1"></div>
+						<div id="curSessionNote2"></div>
+					</div>
+					<div id="curSessionYellowBar" class="stmtMiddleHeader">
+						<div id="curSessionAccBal"></div>
+					</div>
+				</div>
+
+				<div id="divCurSessionTable">
+					<div id="curSessionMsg"></div>
+					<div id="curSessionHeader"></div>
+					<div id="curSessionTable"></div>
+					<div id="divCurSessionBottom">
+						<div class="stmtCloseButton" id="curSessionClose" onclick="closeAllBetSlipOverlay()"></div>
+						<div class="stmtPrintButton" id="curSessionPrint" onmouseover="showDiv('print', true);" onmouseout="showDiv('', false);" onclick="onclickCurSessionPrint()"></div>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="divRecall">
+				<div id="divRecallYellowHeader">
+					<div class="stmtMiddleHeader">
+						<div id="recallPageNo"></div>
+					</div>
+				</div>
+
+				<div id="divRecallTable">
+					<div id="recallMsg"></div>
+					<div id="recallHeader"></div>
+					<div id="recallTable"></div>
+					<div id="divRecallBottom">
+						<div class="stmtCloseButton" id="recallClose" onclick="closeAllBetSlipOverlay()"></div>
+						<div class="stmtNextDimButton" id="recallNext" onclick="recallNextPage()"></div>
+						<div class="stmtPrevDimButton" id="recallPrev" onclick="recallPrevPage()"></div>
+						<div class="stmtPrintButton" id="recallPrint" onmouseover="showDiv(this, 'print', true);" onmouseout="showDiv(this, '', false);" onclick="onclickRecallPrint()"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="topYellowBar"></div>
+	</div>
+
+	<div id="divFundTransfer">
+		<div class="eft_base">
+			<div id="popupHeader" style="float: left; width: 100%">
+				<div class="eft_topTitleBar" style="float:left; width:100%; padding:5px 0px 0px 0px">
+					<img src="/info/include/images/stroke_yellow.gif" style="padding-left:10px; vertical-align: middle">
+					<span class="titleWhite" id="asTitle" style="padding-left:10px; vertical-align: middle"></span>
+					<a href="javascript:;" style="cursor:help; vertical-align: middle"><img src="/info/include/images/icon_help.gif" id="pic_help" onclick="EftOnClickHelp()" hspace="3" border="0" align="absmiddle" style="margin-bottom:3px;"></a>
+				</div>
+				<div style="float:left;width:100%; border-top:1px solid #E8E9EA; background-color:#FFFFFF; line-height:1px; margin-top:3px;">
+				</div>
+				<div style="background:url(/info/include/images/popup_nav_bg.gif) repeat-x; float:left; width:100%; padding-bottom: 3px;">
+					<input type="button" class="popupNav eftMenu" id="eftMenuBtn0" onclick="EftOnLoad(0)" />
+					<img src="/info/include/images/popuo_stroke_gray.gif" width="1" height="14" style="vertical-align: middle">
+					<input type="button" class="popupNav eftMenu" id="eftMenuBtn1" onclick="EftOnLoad(1)" />
+					<img id="eftMenuBtn2Stoke" src="/info/include/images/popuo_stroke_gray.gif" width="1" height="14" style="vertical-align: middle">
+					<input type="button" class="popupNav eftMenu" id="eftMenuBtn2" onclick="EftOnLoad(2)" /><img id="imgSingleLegIcon" class="eft_single_leg_img_sm" src="/info/include/images/eft_single.png" style="display:none"/>
+				</div>
+			</div>
+			<div id="DivNotice" style="display: none; width: 270px; height: 170px; z-index: 100; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background-color: #FFFFFF; border: 1px solid #A6A6A6">
+				<div>
+					<h2 id="lblServiceNotice" style="text-align: center"></h2>
+				</div>
+				<div id="lblServiceContent" style="padding: 10px; height: 60px; text-align: center;"></div>
+				<div style="height: 30px; text-align: center; float: left; width: 100%; margin-top:15px;">
+					<input id="btnUpdateNotification" type="button" class="btnServiceConfirm btnGray" onclick="UpdateNotification();" style="display:none" />
+					<input id="btnUpdateSingleLegNotification" type="button" class="btnServiceConfirm btnGray" onclick="UpdateSingleLegNotification();" style="display:none" />
+				</div>
+			</div>
+			<div id="DivEpscoNotice" style="display: none; width: 270px; z-index: 100; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background-color: #FFFFFF; border: 1px solid #A6A6A6">
+				<div>
+					<h2 id="lblEpscoServiceNotice" style="text-align: center"></h2>
+				</div>
+				<div id="lblEpscoNoticeContent" style="padding: 10px; text-align: center;"></div>
+				<div id="lblEpscoNoticeContentLnk" style="padding: 10px; text-align: left;"></div>
+				<div style="padding: 10px; text-align: center;">
+					<input id="chkEpscoNotShowNotice" type="checkbox"></input>
+					<label for="chkEpscoNotShowNotice" id="lblEpscoNotShowNotice"></label>
+				</div>
+				<div style="height: 30px; text-align: center; float: left; width: 100%; margin-top:15px;display:flex;justify-content: space-evenly;">
+					<input id="btnEpscoNoticeCancel" type="button" class="btnServiceConfirm btnGray" onclick="CancelEpscoNotice();" />
+					<input id="btnEpscoNoticeOk" type="button" class="btnServiceConfirm btnGray" onclick="ProceedEpscoNotice()();" />
+				</div>
+			</div>
+			<!-- **************** DivRequest BEGIN **************** -->
+			<div id="DivRequest" style="float: left;width:100%;background-color: #EEEEEE;">
+				<div id="RequestYellowBar" style="background-color:#FCF7B2;display:none;">
+					<div style="float:left;width:610px;padding:10px 15px 10px 15px;">
+						<span id="lblRequestNoNba"></span>
+					</div>
+					<div id="DivLinkNow" style="float:left;width:100px;padding:10px 15px 10px 15px;text-align:right;display:none;">
+						<input type="button" class="btnLinkNow btnGray" onclick="EftOnLoad(2);" style="right:0;" />
+					</div>
+				</div>
+				<div style="float: left; width: 100%; border-top: 2px solid #003B7F; "></div>
+				<div id="DivDeposit" style="float: left; width: 100%; display:none">
+					<div class="eft_item_l">
+						<span id="lblFrom"></span>:
+					</div>
+					<div style="float: left; position: relative; width: 80%;">
+						<div id="DivDepositType" style="margin: 15px 15px 0px 0px;  position: relative; display:none; ">
+							<div id="DivDepositTypeNba" class="eft_deposit_selection eft_deposit_selection_selected" onclick="changeDepositType('NBA')"><span id="lbl_link_nba"></span></div>
+							<div id="DivDepositTypePps" class="eft_deposit_selection" onclick="changeDepositType('PPS')"><span id="lbl_link_pps"></span></div>
+						</div>
+						<div id="DivDepositNba" class="eft_deposit_group">
+							<div id="div_nba1" class="eft_deposit_nba">
+								<input type="radio" id="rd_nba1" value="NBA1" name="trans_from_to" checked="checked" onclick="OnChangeTransFrom(true);" class="eft_rd" />
+								<label id="lbl_bankname_1" for="rd_nba1" class="eft_rd_label"></label>
+								<span class="eft_rd_label">
+									<label id="lbl_bank_account_1" for="rd_nba1"></label>
+							</span>
+						</div>
+							<div id="div_nba2" class="eft_deposit_nba">
+								<input type="radio" id="rd_nba2" value="NBA2" name="trans_from_to" onclick="OnChangeTransFrom(true);" class="eft_rd"  />
+								<label style="display: block;" id="lbl_bankname_2" for="rd_nba2" class="eft_rd_label"></label>
+								<span class="eft_rd_label">
+								<label id="lbl_bank_account_2" for="rd_nba2"></label>
+							</span>
+						</div>
+						</div>
+						<div id="DivDepositPps" class="eft_deposit_group" style="margin-top:0px">
+							<div id="div_pps" class="eft_deposit_nba">
+								<input type="radio" id="rd_pps" name="trans_from_to" value="PPS" onclick="OnChangeTransFrom(true)" class="eft_rd" />
+								<label  id="lbl_pps" for="rd_pps" class="eft_rd_label"></label>
+								<span class="eft_rd_label" style="margin-bottom: 10px;">
+								<label id="lbl_pps2" for="rd_pps"></label>
+							</span>
+						</div>
+					</div>
+				</div>
+					<div class="eft_separater"></div>
+				</div>
+				<div style="float: left; width: 100%;">
+					<div class="eft_item_l">
+						<span id="lblTo"></span>:
+					</div>
+					<div style="padding: 10px 15px 10px 0px; float: left; width: 70%; position: relative; box-sizing: border-box;">
+						<span id="txtAccount"></span>
+						<br />
+						<span id="txtBettingAcctNo"></span>
+					</div>
+				</div>
+				<div id="sep2" class="eft_separater" style="display:none"></div>
+				<div id="DivDepositMethod" style="display:none;float:left;width:100%">
+					<div class="eft_item_l">
+						<span id="lblMethod"></span>:
+					</div>
+					<div id="DivDepositMethodListNBA1" class="eft_transaction_method_list">
+						<div id="DivDepositMethodFps_nba1" style="display: none;margin:0px 0px 10px 0px">
+							<input type="radio" id="rd_fps_nba1" value="FPS" name="method" onclick="OnChangeTransFrom(false);" class="eft_rd" />
+							<label style="display: block;font-weight: bold;" id="lbl_method_fps_nba1" for="rd_fps_nba1" class="lbl_method_fps eft_rd_label_method"></label>
+							<span id="DivDepositMethodFpsText_nba1" class="eft_rd_label_method">
+								<label id="lbl_method_fps_2_nba1" class="lbl_method_fps_2" for="rd_fps_nba1"></label>
+								<label id="lbl_method_fps_3_nba1"  class="lbl_method_fps_3 contentBlue" for="rd_fps_nba1" style="display:none"></label>
+								<label id="lbl_method_fps_3a_nba1"  class="lbl_method_fps_3a" for="rd_fps_nba1" style="display:none"></label>
+							</span>
+							<span id="DivDepositMethodFpsMain_nba1" class="eft_rd_label_method" style="display: none;">
+								<label id="lbl_method_fps_4_nba1" class="lbl_method_fps_4" for="rd_fps_nba1"></label>
+								<span id="DivDepositMethodFpsSL_nba1" class="eft_rd_label_method" style="color:black">
+									<label id="lbl_method_fps_5_nba1" class="lbl_method_fps_5" for="rd_fps_nba1"></label>
+								</span>
+							</span>
+							
+						</div>
+						<div id="DivDepositMethodEpsco_nba1" style="display: none;margin:0px 0px 10px 0px">
+							<input type="radio" id="rd_epsco_nba1" value="EPSCO" name="method" onclick="OnChangeTransFrom(false);" class="eft_rd" />
+							<label style="display: block;font-weight: bold;" id="lbl_method_epsco_nba1" for="rd_epsco_nba1" class="lbl_method_epsco eft_rd_label_method"></label>
+							<span class="eft_rd_label_method">
+								<label id="lbl_method_epsco_2_nba1" class="lbl_method_epsco_2" for="rd_epsco_nba1"></label>
+								<label id="lbl_method_epsco_3_nba1" class="lbl_method_epsco_3 contentBlue" for="rd_epsco_nba1"></label>
+							</span>
+						</div>
+						<div id="DivDepositMethodAutopay_nba1" style="display: none;margin:0px 0px 10px 0px">
+							<input type="radio" id="rd_autopay_nba1" value="AUTOPAY" name="method" onclick="OnChangeTransFrom(false);" class="eft_rd" />
+							<label style="display: block;font-weight: bold;" id="lbl_method_autopay_nba1" for="rd_autopay_nba1" class="lbl_method_autopay eft_rd_label_method"></label>
+							<span class="eft_rd_label_method">
+								<label id="lbl_method_autopay_2_nba1" class="lbl_method_autopay_2" for="rd_autopay_nba1"></label>
+								<label id="lbl_method_autopay_3_nba1" class="lbl_method_autopay_3" for="rd_autopay_nba1" style="display:none"></label>
+							</span>
+						</div>
+						<a id="lnkOtherMeans_nba1" onclick="toggleOtherMeans()" href="javascript:;" style="float:left;margin-bottom:10px;display: none;"></a>
+					</div>
+					<div id="DivDepositMethodListNBA2" class="eft_transaction_method_list">
+						<div id="DivDepositMethodFps_nba2" style="display: none;margin:0px 0px 10px 0px">
+							<input type="radio" id="rd_fps_nba2" value="FPS" name="method" onclick="OnChangeTransFrom(false);" class="eft_rd" />
+							<label style="display: block; font-weight: bold;" id="lbl_method_fps_nba2" for="rd_fps_nba2" class="lbl_method_fps eft_rd_label_method"></label>
+							<span id="DivDepositMethodFpsText_nba2" class="eft_rd_label_method">
+								<label id="lbl_method_fps_2_nba2" class="lbl_method_fps_2" for="rd_fps_nba2"></label>
+								<label id="lbl_method_fps_3_nba2" class="lbl_method_fps_3 contentBlue" for="rd_fps_nba2" style="display:none"></label>
+								<label id="lbl_method_fps_3a_nba2" class="lbl_method_fps_3a" for="rd_fps_nba2" style="display:none"></label>
+							</span>
+							<span id="DivDepositMethodFpsMain_nba2" class="eft_rd_label_method" style="display: none;">
+								<label id="lbl_method_fps_4_nba2" class="lbl_method_fps_4" for="rd_fps_nba2"></label>
+								<span id="DivDepositMethodFpsSL_nba2" class="eft_rd_label_method" style="display:none; color:black">
+									<label id="lbl_method_fps_5_nba2" class="lbl_method_fps_5" for="rd_fps_nba1"></label>
+								</span>
+							</span>
+						</div>
+						<div id="DivDepositMethodEpsco_nba2" style="display: none;margin:0px 0px 10px 0px">
+							<input type="radio" id="rd_epsco_nba2" value="EPSCO" name="method" onclick="OnChangeTransFrom(false);" class="eft_rd" />
+							<label style="display: block;font-weight: bold;" id="lbl_method_epsco_nba2" for="rd_epsco_nba2" class="lbl_method_epsco eft_rd_label_method"></label>
+							<span class="eft_rd_label_method">
+								<label id="lbl_method_epsco_2_nba2" class="lbl_method_epsco_2" for="rd_epsco_nba2"></label>
+								<label id="lbl_method_epsco_3_nba2" class="lbl_method_epsco_3 contentBlue" for="rd_epsco_nba2"></label>
+							</span>
+						</div>
+						<div id="DivDepositMethodAutopay_nba2" style="display: none;margin:0px 0px 10px 0px">
+							<input type="radio" id="rd_autopay_nba2" value="AUTOPAY" name="method" onclick="OnChangeTransFrom(false);" class="eft_rd" />
+							<label style="display: block;font-weight: bold;" id="lbl_method_autopay_nba2" for="rd_autopay_nba2" class="lbl_method_autopay eft_rd_label_method"></label>
+							<span class="eft_rd_label_method">
+								<label id="lbl_method_autopay_2_nba2" class="lbl_method_autopay_2" for="rd_autopay_nba2"></label>
+								<label id="lbl_method_autopay_3_nba2" class="lbl_method_autopay_3" for="rd_autopay_nba2" style="display:none"></label>
+							</span>
+						</div>
+						<a id="lnkOtherMeans_nba2" onclick="toggleOtherMeans()" href="javascript:;"></a>
+					</div>
+					<div id="DivDepositMethodListPPS" class="eft_transaction_method_list">
+						<label style="padding-left:0px; display: block;font-weight: bold;" id="lbl_method_pps" class="lbl_method_pps eft_rd_label_method"></label>
+						<span class="eft_rd_label_method; padding-left:0px">
+							<label id="lbl_method_pps_2" class="lbl_method_pps_2"></label><br/>
+							<label id="lbl_method_pps_3" class="lbl_method_pps_3" style="display:none"></label>
+						</span>
+					</div>
+
+				</div>
+				<div id="DivWithdrawal" style="float: left; width: 100%; display:none">
+					<div>
+						<div class="eft_item_l">
+							<span id="lblTo_withdrawal"></span>:
+						</div>
+						<div style="padding: 15px 15px 15px 0px; float: left; width: 70%; position: relative; box-sizing: border-box">
+							<div id="div_nba1_withdrawal" style="padding-bottom: 15px;">
+								<label id="lbl_bankname_1_withdrawal" for="rd_nba1" style="vertical-align:middle"></label><br />
+								<span>
+									<label id="lbl_bank_account_1_withdrawal" for="rd_nba1_withdrawal" />
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="sep2w" class="eft_separater" style="display:none"></div>
+				<div id="DivWithdrawalMethod" style="display:none;float:left;width:100%">
+					<div class="eft_item_l">
+						<span id="lblMethod_w"></span>:
+					</div>
+					<div id="DivWithdrawalMethodListNBA1" class="eft_transaction_method_list">
+						<div id="DivWithdrawalMethodFps_nba1" style="display: none;margin:0px 0px 10px 0px">
+							<input type="radio" id="rd_w_fps_nba1" value="FPS" name="method" onclick="OnChangeTransFrom(false);" class="eft_rd" />
+							<label style="display: block;font-weight: bold;" id="lbl_method_fps_nba1" for="rd_w_fps_nba1" class="lbl_method_fps eft_rd_label_method"></label>
+							<span id="DivWithdrawalMethodFpsText_nba1" class="eft_rd_label_method">
+								<label id="lbl_w_method_fps_2_nba1" class="lbl_method_fps_2" for="rd_w_fps_nba1"></label>
+								<label id="lbl_w_method_fps_3_nba1"  class="lbl_method_fps_3 contentBlue" for="rd_w_fps_nba1" style="display:none"></label>
+								<label id="lbl_w_method_fps_3a_nba1"  class="lbl_method_fps_3a" for="rd_w_fps_nba1" style="display:none"></label>
+							</span>
+							<span id="DivWithdrawalMethodFpsMain_nba1" class="eft_rd_label_method" style="display: none;">
+								<label id="lbl_w_method_fps_4_nba1" class="lbl_method_fps_4" for="rd_w_fps_nba1"></label>
+								<span id="DivWithdrawalMethodFpsSL_nba1" class="eft_rd_label_method" style="display:none; color:black">
+									<label id="lbl_w_method_fps_5_nba1" class="lbl_method_fps_5" for="rd_w_fps_nba1"></label>
+								</span>
+							</span>
+						</div>
+						<div id="DivWithdrawalMethodEpsco_nba1" style="display: none;margin:0px 0px 10px 0px">
+							<input type="radio" id="rd_w_epsco_nba1" value="EPSCO" name="method" onclick="OnChangeTransFrom(false);" class="eft_rd" />
+							<label style="display: block;font-weight: bold;" id="lbl_method_epsco_nba1" for="rd_w_epsco_nba1" class="lbl_method_epsco eft_rd_label_method"></label>
+							<span class="eft_rd_label_method">
+								<label id="lbl_w_method_epsco_2_nba1" class="lbl_method_epsco_2" for="rd_w_epsco_nba1"></label>
+								<label id="lbl_w_method_epsco_3_nba1" class="lbl_method_epsco_3 contentBlue" for="rd_w_epsco_nba1"></label>
+							</span>
+						</div>
+						<div id="DivWithdrawalMethodAutopay_nba1" style="display: none;margin:0px 0px 10px 0px">
+							<input type="radio" id="rd_w_autopay_nba1" value="AUTOPAY" name="method" onclick="OnChangeTransFrom(false);" class="eft_rd" />
+							<label style="display: block;font-weight: bold;" id="lbl_method_autopay_nba1" for="rd_w_autopay_nba1" class="lbl_method_autopay eft_rd_label_method"></label>
+							<span class="eft_rd_label_method">
+								<label id="lbl_w_method_autopay_2_nba1" class="lbl_method_autopay_2" for="rd_w_autopay_nba1"></label>
+								<label id="lbl_w_method_autopay_3_nba1" class="lbl_method_autopay_3" for="rd_w_autopay_nba1" style="display:none"></label>
+							</span>
+						</div>
+						<a id="lnkOtherMeans_w_nba1" onclick="toggleOtherMeans()" href="javascript:;" style="float:left;margin-bottom:10px;display: none;"></a>
+					</div>
+				</div>	
+				<div style="float: left; width: 100%; border-top: 3px solid white; background-color: #EEEEEE">
+					<div class="eft_item_l">
+						<span id="lblTransAmount"></span>($):
+					</div>
+					<div style="padding: 15px 15px 15px 0px; float: left; width: 70%; position: relative; box-sizing: border-box;">
+						<input type="text" class="inputField4" id="trans_amount" name="trans_amount" style="margin-bottom:5px;" />
+						<br />
+						<span style="display: none; padding: 10px 0px 0px 0px" id="lbl_eftnote"></span>
+					</div>
+				</div>
+				<div id="DivPpsLink" style="float: left; width: 100%; border-top: 3px solid white; background-color: #FFF;">
+					<div style="padding:10px 15px 10px 15px;">
+						<a target="_blank" id="lnk_pps"></a>
+					</div>
+				</div>
+				<div id="DivBanner" style="float: left; background-color: white; width: 100%; text-align: center; display: none">
+					<a id="aBanner">
+						<img id="imgBanner" style="max-height:85px;max-width:472px; margin-top:10px;" /></a>
+				</div>
+				<!-- DivRequestButton BEGIN -->
+				<div class="eft_bottom">
+					<div class="eft_bottom_l">
+						<input type="button" class="btnClose btnGray" style="margin-left: 15px" onclick="closeAllBetSlipOverlay()" />
+						<input type="button" class="btnReset btnGray" style="margin-left: 5px" onclick="OnClickEftReset()" />
+					</div>
+					<div class="eft_bottom_r">
+						<input id="btnDepositNext" type="button" class="btnNext btnGray" style="margin-right: 15px;" onclick="OnClickEftNext()" />
+					</div>
+				</div>
+				<!-- DivRequestButton END -->
+			</div>
+			<!-- **************** DivNoNba BEGIN **************** -->
+			<div id="DivNoNba" style="display:none; float: left; width: 100%; border-top: 2px solid #003B7F; background-color: #EEEEEE;">
+				<div class="eft_item">
+					<div style="padding:20px">
+						<span id="lbl_NoNba"></span>
+						<span id="lbl_NoNba_Link"></span>
+					</div>
+				</div>
+				<div class="eft_bottom">
+					<div class="eft_bottom_l">
+						<input type="button" class="btnClose btnGray" style="margin-left: 15px" onclick="closeAllBetSlipOverlay()" />
+					</div>
+					<div class="eft_bottom_r">&nbsp;
+						<input type="button" id="btnNoNbaLink" class="btnLinkNow btnGray" style="margin-right: 15px;" onclick="EftOnLoad(2)" style="display:none" />
+					</div>
+				</div>
+			</div>
+			<!-- **************** DivConfirmCharge BEGIN **************** -->
+			<div id="DivConfirmCharge" style="display:none; float: left; width: 100%; border-top: 2px solid #003B7F; background-color: #EEEEEE;">
+				<div style="overflow-x: hidden; background-color: #D8E2EC; width: vm100; padding: 10px 20px 10px 20px;">
+					<span id="lbl_ConfirmCharge" style="color: #05378E; font-weight: bold;"></span>
+				</div>
+				<div class="eft_item">
+					<div id="lblConfirmChargeText" style="padding:20px"></div>
+				</div>
+				<div class="eft_bottom">
+					<div class="eft_bottom_l">
+						<input type="button" class="btnCancel btnGray" style="margin-left: 15px" onclick="OnClickEftBack2()" />
+					</div>
+					<div class="eft_bottom_r">
+						<input type="button" class="btnContinue btnGray" style="margin-right: 15px;" onclick="OnClickEftSubmit();" />
+					</div>
+				</div>
+			</div>
+			<!-- **************** DivConfirm BEGIN **************** -->
+			<div id="DivConfirm" style="float: left; display: none; width: 100%; border-top: 2px solid #003B7F">
+				<div style="overflow-x: hidden; background-color: #D8E2EC; width: 100%; padding: 15px 0px 15px 0px;">
+					<span id="lbl_preview" style="padding-left:15px; color: #05378E; font-weight: bold;"></span>
+					<br />
+					<span id="lbl_preview2" style="padding-left:15px"></span>
+				</div>
+				<div class="eft_item" id="DivConfirmBank">
+					<div class="eft_item_l">
+						<span id="lblPreviewFrom"></span>:
+					</div>
+					<div class="eft_item_r">
+						<span id="lblPreviewBankName"></span>
+						<br />
+						<span id="lblPreviewBankAcc"></span>
+					</div>
+				</div>
+				<div class="eft_item" id="DivConfirmBet">
+					<div class="eft_item_l">
+						<span id="lblPreviewTo"></span>:
+					</div>
+					<div class="eft_item_r">
+						<span id="lblPreviewBet"></span>
+						<br />
+						<span id="lblPreviewBetAcc"></span>
+					</div>
+				</div>
+				<div class="eft_item">
+					<div class="eft_item_l">
+						<span id="lblPreviewAmount"></span>:
+					</div>
+					<div class="eft_item_r">
+						$<span id="lblPreviewAmountValue"></span>
+					</div>
+				</div>
+				<div class="eft_item" id="DivPreviewTransType">
+					<div class="eft_item_l">
+						<span id="lblPreviewTransType"></span>:
+					</div>
+					<div class="eft_item_r">
+						<span id="lblPreviewTransTypeValue"></span>
+					</div>
+				</div>
+				<div id="DivPreviewCharge" class="eft_item" style="display: none">
+					<div class="eft_item_l contentBlue">
+						<span id="lblPreviewCharge"></span>:
+					</div>
+					<div class="eft_item_r contentBlue">
+						$<span id="lblPreviewChargeValue"></span>
+					</div>
+				</div>
+				<div id="DivBankPin" style="display: none; border-top: solid 3px white; padding-top: 5px;background-color: #FFF5B0;">
+					<div id="DivPreviewUseLabel" style="padding:0px 0px 10px 15px"><span id="lblPreviewTransTypeEpsco"></span>:</div>
+					<div style="padding:0px 0px 0px 15px">
+						<div id="DivPreviewUseEpsco">
+							<input type="radio" id="rd_eft_epsco" value="EPSCO" name="preview_eft_selection" checked="checked" style="vertical-align:middle" onClick="OnChangePreviewTrans()">
+							<label style="vertical-align:middle" id="lbl_preview_eft_epsco" for="rd_eft_epsco"></label><br />
+						</div>
+						<!-- DivBankPin BEGIN -->
+						<table id="BankPin" border="0" cellspacing="0" cellpadding="0" style="width:715px; padding-left:15px;">
+							<tr>
+								<td class="yellowBarEft" style="padding: 3px 10px 3px 15px;">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td colspan="3" class="content" style="padding: 0px 0px 0px 0px;">
+												<span id="txtEFTNotice"></span>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="3" style="height:5px">
+											</td>
+										</tr>
+										<tr>
+											<td width="" class="content" style="padding: 0px 0px 0px 0px;">
+												<span id="txtServicePin"></span>:
+											</td>
+											<td width="317px" class="content" style="padding: 0px 0px 0px 5px;">
+												<input type="password" maxlength="8" id="pin" name="pin" class="inputField4" readonly style="width:100%">
+											</td>
+											<td class="content" style="padding: 0px 0px 0px 10px;">
+												<input type="button" style="font-size: 20px; font-weight: bold; line-height:21px;" class="btnGray" id="btnDeletePin" value=" &#8592; " onclick="Backspace()" />
+											</td>
+										</tr>
+										<tr>
+											<td colspan="3">
+												<img src="/info/include/images/spacer.gif" height="5px" />
+											</td>
+										</tr>
+										<tr>
+											<td class="content" style="padding: 0px 0px 0px 0px;">&nbsp;</td>
+											<td class="content" style="padding: 0px 0px 0px 5px;">
+												<table border="0" cellspacing="0" cellpadding="0">
+													<tr>
+														<td width="21" style="padding: 0px 3px 0px 0px;">
+															<img id="pinBtn0" onmousedown="inputPinDown(0)" onmouseout="inputPinOut(0)" onmouseup="inputPin(0)">
+														</td>
+														<td width="21" style="padding: 0px 3px 0px 0px;">
+															<img id="pinBtn1" onmousedown="inputPinDown(1)" onmouseout="inputPinOut(1)" onmouseup="inputPin(1)">
+														</td>
+														<td width="21" style="padding: 0px 3px 0px 0px;">
+															<img id="pinBtn2" onmousedown="inputPinDown(2)" onmouseout="inputPinOut(2)" onmouseup="inputPin(2)">
+														</td>
+														<td width="21" style="padding: 0px 3px 0px 0px;">
+															<img id="pinBtn3" onmousedown="inputPinDown(3)" onmouseout="inputPinOut(3)" onmouseup="inputPin(3)">
+														</td>
+														<td width="21" style="padding: 0px 3px 0px 0px;">
+															<img id="pinBtn4" onmousedown="inputPinDown(4)" onmouseout="inputPinOut(4)" onmouseup="inputPin(4)">
+														</td>
+														<td width="21" style="padding: 0px 3px 0px 0px;">
+															<img id="pinBtn5" onmousedown="inputPinDown(5)" onmouseout="inputPinOut(5)" onmouseup="inputPin(5)">
+														</td>
+														<td width="21" style="padding: 0px 3px 0px 0px;">
+															<img id="pinBtn6" onmousedown="inputPinDown(6)" onmouseout="inputPinOut(6)" onmouseup="inputPin(6)">
+														</td>
+														<td width="21" style="padding: 0px 3px 0px 0px;">
+															<img id="pinBtn7" onmousedown="inputPinDown(7)" onmouseout="inputPinOut(7)" onmouseup="inputPin(7)">
+														</td>
+														<td width="21" style="padding: 0px 3px 0px 0px;">
+															<img id="pinBtn8" onmousedown="inputPinDown(8)" onmouseout="inputPinOut(8)" onmouseup="inputPin(8)">
+														</td>
+														<td width="21" style="padding: 0px 0px 0px 0px;">
+															<img id="pinBtn9" onmousedown="inputPinDown(9)" onmouseout="inputPinOut(9)" onmouseup="inputPin(9)">
+														</td>
+													</tr>
+												</table>
+											</td>
+											<td class="content" style="padding: 0px 0px 0px 10px;">
+												<input type="button" class="btnReinput btnGray" id="btnReinput" onclick="clrPin()" />
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+						<!-- DivBankPin END-->
+						<div id="DivPreviewUseAutopay" style="padding:5px 0px 10px 0px">
+							<input type="radio" id="rd_eft_autopay" value="AUTOPAY" name="preview_eft_selection" style="vertical-align:middle" onClick="OnChangePreviewTrans()">
+							<label style="vertical-align:middle" id="lbl_preview_eft_autopay" for="rd_eft_autopay"></label>
+							<div style="padding-left:29px"><label id="lbl_preview_eft_autopay_note"></label></div>
+						</div>
+					</div>
+				</div>
+				<div id="DivPreviewReminder" class="eft_item" style="display:none;background-color:#FFF;padding:10px 20px 5px 15px;">
+					<span id="lblPreviewNoPin"></span>
+				</div>
+				<div class="eft_bottom">
+					<div class="eft_bottom_l">
+						<input type="button" class="btnBack btnGray" style="margin-left: 15px" onclick="OnClickEftBack()" />
+					</div>
+					<div class="eft_bottom_r">
+						<input id="btnPreviewSubmit" type="button" class="btnConfirm btnGray" style="margin-right: 15px;" onclick="OnClickEftSubmit();" />
+						<input id="btnPreviewContinue" type="button" class="btnConfirm btnGray" style="margin-right: 15px;display:none;" onclick="OnClickDisplayCharge();" />
+					</div>
+				</div>
+			</div>
+
+			<!-- **************** DivProgress BEGIN **************** -->
+			<div id="DivProgress" style="float: left; width: 100%; border-top: 2px solid #003B7F; display: none">
+				<div style="height: 410px; padding: 10px; text-align: center;">
+					<img id="imgProgress" style="width: 50px; margin-top:170px" />
+					<br />
+					<span id="lblProgress" style="font-weight: bold;"></span>
+				</div>
+			</div>
+			<div id="DivOtpProgress" style="float: left; width: 100%; border-top: 2px solid #003B7F; display: none">
+				<div style="height: 410px; padding: 10px; text-align: center;">
+					<img id="imgOtpProgress" style="width: 50px; margin-top:170px" />
+				</div>
+			</div>
+
+			<div id="DivConfirmAutopay" style="float: left; width: 100%; border-top: 2px solid #003B7F; display: none">
+				<div style="overflow-x: hidden; background-color: #D8E2EC; width: vm100; padding:10px 20px 10px 20px;">
+					<span id="lbl_ConfirmAutopay" style="color: #05378E; font-weight: bold;">asdfsadf</span>
+				</div>
+				<div style="height: 280px">
+					<div style="padding: 20px; background-color: #EEEEEE;">
+						<span class="content" id="txtConfirmAutopayMsg"></span>
+					</div>
+					<div style="padding: 20px">
+						<span class="content" id="txtConfirmAutopayMarketingMsg"></span>
+					</div>
+				</div>
+				<div class="eft_bottom">
+					<div class="eft_bottom_l">
+						<input type="button" id="btnConfirmAutopayBack" class="btnCancel btnGray" style="margin-left: 15px" onclick="OnClickEftBack3()" />
+					</div>
+					<div class="eft_bottom_r">
+						<input type="button" id="btnConfirmAutopay" class="btnContinue btnGray" style="margin-right: 15px" onclick="OnClickConfirmAutopay()" />
+					</div>
+				</div>
+			</div>
+			<!-- **************** DivReply START **************** -->
+			<div id="DivReply" style="display: none; float: left; width: 100%; border-top: 2px solid #003B7F;">
+				<div style="padding: 10px; text-align: center;">
+					<img id="imgResult" style="width: 35px; margin-bottom:5px;" />
+					<br />
+					<span id="lblResult" style="font-weight: bold;"></span>
+				</div>
+				<div id="DivReplyResult" style="display: none">
+					<div style="overflow-x: hidden; background-color: #D8E2EC; width: 100%; padding: 5px 0px 5px 0px;">
+						<span id="lblSummary" style="padding-left:15px; color: #05378E; font-weight: bold;">Online Deposit Summary</span>
+					</div>
+					<div class="eft_item" id="DivReplyBank">
+						<div class="eft_item_l">
+							<span id="lblResultFrom"></span>:
+						</div>
+						<div class="eft_item_r">
+							<span id="lblResultBankName"></span>
+							<br />
+							<span id="lblResultBankAcc"></span>
+						</div>
+					</div>
+					<div class="eft_item" id="DivReplyBet">
+						<div class="eft_item_l">
+							<span id="lblResultTo"></span>:
+						</div>
+						<div class="eft_item_r">
+							<span id="lblResultBet"></span>
+							<br />
+							<span id="lblResultBetAcc"></span>
+						</div>
+					</div>
+					<div class="eft_item">
+						<div class="eft_item_l">
+							<span id="lblResultTransType"></span>:
+						</div>
+						<div class="eft_item_r">
+							<span id="lblResultTransTypeValue"></span>
+						</div>
+					</div>
+					<div class="eft_item">
+						<div class="eft_item_l">
+							<span id="lblResultAmount"></span>:
+						</div>
+						<div class="eft_item_r">
+							$<span id="lblResultAmountValue"></span>
+						</div>
+					</div>
+					<div id="DivResultFee" class="eft_item" style="display: none;">
+						<div class="eft_item_l contentBlue">
+							<span id="lblResultFee"></span>:
+						</div>
+						<div class="eft_item_r contentBlue">
+							$<span id="lblResultFeeValue"></span>
+						</div>
+					</div>
+					<div id="DivRejectReason" class="eft_item" style="display: none;">
+						<div class="eft_item_l">
+							<span id="lblResultReject"></span>:
+						</div>
+						<div class="eft_item_r">
+							<span id="lblResultRejectReason"></span>
+						</div>
+					</div>
+					<div id="DivReference" class="eft_item" style="display:none">
+						<div class="eft_item_l">
+							<span id="lblResultRef"></span>:
+						</div>
+						<div class="eft_item_r">
+							<span id="lblResultRefNo">---</span>
+						</div>
+					</div>
+					<div id="DivBalance" class="eft_item" style="display: none; background-color: #FFF;">
+						<div class="eft_item_l">
+							<span id="lblResultBetAccBal"></span>:
+						</div>
+						<div class="eft_item_r">
+							$<span id="lblResultBetAccBalVal"></span>
+						</div>
+					</div>
+					<div id="DivReminder" class="eft_item" style="display: none; background-color: #FFF; padding: 10px 20px 5px 15px;">
+						<span id="lblResultReminder"></span>
+					</div>
+					<div class="eft_bottom">
+						<div class="eft_bottom_l">&nbsp;
+						</div>
+						<div class="eft_bottom_r">
+							<input type="button" class="btnDone btnGray" style="margin-right: 15px" onclick="EftCompleted()" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- **************** DivPPSRedirect START **************** -->
+			<div id="DivPPSRedirect" style="float: left; width: 100%; border-top: 2px solid #003B7F; display: none">
+				<div style="height: 280px">
+					<div style="padding: 60px 100px 7px 100px">
+						<span class="content" id="txtRedirectMsg"></span>
+					</div>
+				</div>
+				<div class="eft_bottom">
+					<div class="eft_bottom_l">
+						<input type="button" class="btnBack btnGray" style="margin-left: 15px" onclick="OnClickEftBack2();" />
+					</div>
+					<div class="eft_bottom_r">
+						<input type="button" class="btnRedirect btnGray" style="margin-right: 15px" onclick="OnClickPPSRedirect()" />
+					</div>
+				</div>
+			</div>
+			<!-- **************** DivLink **************** -->
+			<div id="DivLink" style="float: left; width: 100%; border-top: 2px solid #003B7F; display: none">
+				<div style="float: left; width: 100%; background-color: #EEEEEE;">
+					<div style="padding: 10px">
+						<span class="content" id="lblLinkMsg"></span>
+					</div>
+					<div id="DivLinkNba1Fps" style="width:325px; height:215px; margin:0px 5px 0px 10px; padding:10px; background-color:white; float:left; border-radius:5px;">
+						<div><span id="lblLinkingNba1"></span></div>
+						<hr />
+						<div id="DivLinkNba1Ph" style="padding:5px 10px">
+							<div style="padding-bottom:5px"><span id="lblLinkingDepWit" style="color:#0096d6"></span>
+							</div>
+							<div id="DivLinkNoNba1" style="display:none">
+								<span id="lblLinkNoNba1"></span>
+							</div>
+							<div id="DivLinkNba1" style="display:none">
+								<div style="height:50px">
+									<div class="biggerFont"><span id="lblLinkingBank1" /></div>
+									<div class="biggerFont" style="padding-bottom:5px"><span id="lblLinkingBankAcc1" />
+									</div>
+								</div>
+								<div id="DivLinkNba1NotSupport" style="display:none;padding:10px 0px 15px 0px;"><span id="lblLinkNba1NotSupport"></span></div>
+								<div id="DivLinkNba1Support" style="margin-top:5px">
+									<div id="DivLinkFps1" class="eft_link_fps biggerFont" style="display:none; margin-bottom:5px; background-color:#EEEEEE; border-radius: 5px;  height:50px;">
+										<div style="float:left; width:235px; padding: 8px 10px 9px 10px;">
+											<strong><span id="lblLinkFpsMethod"></span></strong><br />
+											<span id="lblLinkFpsStatus"></span>
+										</div>
+										<div style="float:left; padding: 13px 10px 0px 10px;"><img id="ImgLinkNba1Fps">
+										</div>
+									</div>
+									<div id="DivLinkNba1Pending" class="eft_link_pending" style="display: none;">
+										<span id="lblLinkNba1Pending"></span>
+									</div>
+									<div id="DivLinkNba1Rejected" class="eft_link_rejected" style="display: none;" onclick="ResetLinkBank('NBA1')">
+										<div style="float: right;margin: 0px 0px 10px 10px;">X</div>
+										<span id="lblLinkNba1Rejected"></span>
+									</div>
+									<div id="DivLinkNba1Epsco" class="biggerFont" style="margin-bottom:5px; background-color:#EEEEEE; border-radius:5px; height:50px;">
+										<div style="float:left; width:235px; padding: 8px 10px 9px 10px;">
+											<strong><span id="lblLinkEpscoMethod"></span></strong><br />
+											<span id="lblLinkEpscoStatus"></span>
+										</div>
+										<div style="float:left; padding: 13px 10px 0px 10px; "><img id="ImgLinkNba1Epsco"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="DivLinkNba2Fps" style="width:325px; height:215px; margin:0px 10px 0px 5px; padding:10px; background-color:white; float:left; border-radius:5px;">
+						<div><span id="lblLinkingNba2"></span></div>
+						<hr />
+						<div id="DivLinkNba2Ph" style="padding:5px 10px">
+							<div style="padding-bottom:5px"><span id="lblLinkingDep" style="color:#0096d6"></span></div>
+							<div id="DivLinkNoNba2" style="display:none">
+								<span id="lblLinkNoNba2"></span>
+							</div>
+							<div id="DivLinkNba2" style="display:none">
+								<div style="height:50px">
+									<div class="biggerFont"><span id="lblLinkingBank2"></div>
+									<div class="biggerFont" style="margin-bottom:5px;"><span id="lblLinkingBankAcc2"></span></div>
+								</div>
+								<div id="DivLinkNba2NotSupport" style="display:none;padding:10px 0px 15px 0px;"><span id="lblLinkNba2NotSupport"></span></div>
+								<div id="DivLinkNba2Support" style="margin-top:5px">
+									<div id="DivLinkFps2" class="eft_link_fps biggerFont" style="display:none;margin-bottom:5px; background-color:#EEEEEE; border-radius:5px; height:50px;">
+										<div style="float:left; width:235px; padding: 8px 10px 9px 10px;">
+											<strong><span id="lblLinkFpsMethod2"></span></strong><br />
+											<span id="lblLinkFpsStatus2"></span>
+										</div>
+										<div style="float:left; padding: 13px 10px 0px 10px;"><img id="ImgLinkNba2Fps">
+										</div>
+									</div>
+									<div id="DivLinkNba2Pending" class="eft_link_pending" style="display: none;">
+										<span id="lblLinkNba2Pending"></span>
+									</div>
+									<div id="DivLinkNba2Rejected" class="eft_link_rejected" style="display: none;" onclick="ResetLinkBank('NBA2')">
+										<div style="float: right;margin: 0px 0px 10px 10px;">X</div>
+										<span id="lblLinkNba2Rejected"></span>
+									</div>
+									<div id="DivLinkNba2Epsco" class="biggerFont" style="margin-bottom:5px; background-color:#EEEEEE; border-radius:5px; height:50px;">
+										<div style="float:left; width:235px; padding: 8px 10px 9px 10px;">
+											<strong><span id="lblLinkEpscoMethod2"></span></strong><br />
+											<span id="lblLinkEpscoStatus2"></span>
+										</div>
+										<div style="float:left; padding: 13px 10px 0px 10px;"><img id="ImgLinkNba2Epsco"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div style="clear:both; padding:10px;"><span id="lblLinkMsg2"></span></div>
+				</div>
+				<div id="DivBannerLink" style="float: left; background-color: white; width: 100%; text-align: center; margin:10px 0px 10px 0px; display: none">
+					<a id="aBannerLink">
+						<img id="imgBannerLink" style="max-height:85px;max-width:472px;" /></a>
+				</div>
+				<div class="eft_bottom">
+					<div class="eft_bottom_l">
+						<input type="button" class="btnClose btnGray" style="margin-left: 15px" onclick="closeAllBetSlipOverlay()" />
+					</div>
+					<div class="eft_bottom_r">
+						<input type="button" id="btnLinkNext" disabled="disabled" class="btnNext btnGray" style="margin-right: 15px" onclick="OnClickLinkNext()" />
+					</div>
+				</div>
+			</div>
+			<div id="DivLinkSummary" style="display: none; float: left; width: 100%; border-top: 2px solid #003B7F;">
+				<div style="padding: 10px; text-align: left;">
+					<span id="lblLinkSummaryResult"></span>
+				</div>
+				<div>
+					<div class="eft_item">
+						<div class="eft_item_l">
+							<span id="lblLinkSummaryName"></span>:
+						</div>
+						<div class="eft_item_r">
+							<span id="lblLinkSummaryResultName"></span>
+						</div>
+					</div>
+					<div class="eft_item">
+						<div class="eft_item_l">
+							<span id="lblLinkSummaryBankName"></span>:
+						</div>
+						<div class="eft_item_r">
+							<span id="lblLinkSummaryResultBankName"></span>
+						</div>
+					</div>
+					<div class="eft_item">
+						<div class="eft_item_l">
+							<span id="lblLinkSummaryBankAc"></span>:
+						</div>
+						<div class="eft_item_r">
+							<span id="lblLinkSummaryResultBankAc"></span>
+						</div>
+					</div>
+					<div class="eft_item">
+						<div class="eft_item_l">
+							<span id="lblLinkSummaryPhone"></span>:
+						</div>
+						<div class="eft_item_r">
+							<span id="lblLinkSummaryResultPhone"></span>
+						</div>
+					</div>
+					<div class="eft_item" id="DivLinkSummaryReject" style="display:none">
+						<div class="eft_item_l">
+							<span id="lblLinkSummaryReject"></span>:
+						</div>
+						<div class="eft_item_r">
+							<span id="lblLinkSummaryResultReject"></span>
+						</div>
+					</div>
+					<div class="eft_item" style="background-color: #FFF; padding: 10px 20px 5px 15px;">
+						<span id="lblLinkSummaryResultReminder"></span>
+					</div>
+					<div class="eft_bottom">
+						<div class="eft_bottom_l">&nbsp;
+						</div>
+						<div class="eft_bottom_r">
+							<input type="button" class="btnDone btnGray" style="margin-right: 15px" onclick="EftOnLoad(2)" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="DivLinkTandC" style="float: left; width: 100%; border-top: 2px solid #003B7F; display: none">
+				<div>
+					<div class="eft_item">
+						<div class="eft_item_l">
+							<span id="lblLinkFullname"></span>:
+						</div>
+						<div class="eft_item_r">
+							<span id="lblLinkFullnameValue"></span>
+						</div>
+					</div>
+					<div class="eft_item">
+						<div class="eft_item_l">
+							<span id="lblLinkBankname"></span>:
+						</div>
+						<div class="eft_item_r">
+							<span id="lblLinkBanknameValue"></span>
+						</div>
+					</div>
+					<div class="eft_item">
+						<div class="eft_item_l">
+							<span id="lblLinkBankac"></span>:
+						</div>
+						<div class="eft_item_r">
+							<span id="lblLinkBankacValue"></span>
+						</div>
+					</div>
+					<div class="eft_item">
+						<div class="eft_item_l">
+							<span id="lblLinkMobile"></span>:
+						</div>
+						<div class="eft_item_r">
+							<span id="lblLinkMobileValue"></span>
+						</div>
+					</div>
+				</div>
+				<div style="margin-top:5px;padding:10px;" class="eft_item">
+					<div id="lblLinkTandC" style="height:241px;overflow-y:auto; padding:10px 10px 20px 10px; box-shadow: 0 0 0pt 1px grey; background-color:white;">
+						<strong><span id="lblTandC"></span></strong>
+						<hr />
+						<span id="lblTandCMsg"></span>
+					</div>
+					<div style="margin-top:5px"><input type="checkbox" id="chkTandC" onchange="OnClickLinkTandCCheckbox()"><label for="chkTandC" id="lblLinkTandCCheck"></label>
+					</div>
+				</div>
+				<div class="eft_bottom">
+					<div class="eft_bottom_l">
+						<input type="button" class="btnBack btnGray" style="margin-left: 15px" onclick="OnClickLinkBack()" />
+					</div>
+					<div class="eft_bottom_r">
+						<input type="button" id="btnLinkTandC" class="btnNext btnGray" style="margin-right: 15px" onclick="OnClickLinkTandC()" />
+					</div>
+				</div>
+			</div>
+			<div id="DivLinkOtpFailed" style="float: left; width: 100%; border-top: 2px solid #003B7F; display: none">
+				<div style="padding: 10px; text-align: center;">
+					<img id="imgOtpFailed" style="width: 35px; margin-bottom:5px;" />
+					<br />
+					<span id="lblOtpFailed" style="font-weight: bold;"></span>
+				</div>
+				<div style="height:20px;margin-bottom:2px;background-color: #D8E2EE"></div>
+				<div style="background-color:#EFF0F1;padding:20px;">
+					<span id="lblOtpFailedMsg"></span>
+				</div>
+				<div class="eft_bottom">
+					<div class="eft_bottom_l">
+						&nbsp;
+					</div>
+					<div class="eft_bottom_r">
+						<input type="button" class="btnClose btnGray" style="margin-right: 15px" onclick="closeAllBetSlipOverlay()" />
+					</div>
+				</div>
+			</div>
+			<div id="DivLinkOtpValidate" style="float: left; width: 100%; border-top: 2px solid #003B7F; background-color: #EEEEEE; display: none; height:442px;">
+				<div id="divOtpResent" style="width: 100%; background-color: #1B96D4; display: none; padding: 5px 0px 5px 0px; text-align: center; color: white; float: left;">
+					<span id="lblOtpResent"></span>
+				</div>
+				<div id="divOtpInvalid" style="width: 100%; background-color: #FAD3D8; display: none; padding: 5px 0px 5px 0px; text-align: center; color: #D42027; float: left;">
+					<span id="lblOtpInvalid"></span>
+				</div>
+				<div style="margin:50px auto 50px auto; width:400px; padding:15px;background-color: #FFFFFF;">
+					<div class="biggerFont" style="text-align: center; padding:5px;"><span id="lblOtpsent"></span></div>
+					<div style="text-align: center; padding:5px; color: #9c9999"><span id="lblOtpsentIncorrect"></span>
+					</div>
+					<div class="biggerFont" style="text-align: center; padding:15px 5px 10px 5px"><span id="lblOtpInput"></span></div>
+					<div style="text-align: center">
+						<input id="otpInput0" class="otpCode" maxlength="1" inputmode="numeric" pattern="[0-9]*" />
+						<input id="otpInput1" class="otpCode" maxlength="1" inputmode="numeric" pattern="[0-9]*" />
+						<input id="otpInput2" class="otpCode" maxlength="1" inputmode="numeric" pattern="[0-9]*" />
+						<input id="otpInput3" class="otpCode" maxlength="1" inputmode="numeric" pattern="[0-9]*" />
+						<input id="otpInput4" class="otpCode" maxlength="1" inputmode="numeric" pattern="[0-9]*" />
+						<input id="otpInput5" class="otpCode" maxlength="1" inputmode="numeric" pattern="[0-9]*" />
+					</div>
+					<div class="biggerFont" style="text-align: center; padding:30px 0px 0px 5px;"><span id="lblNoOtp"></span></div>
+					<div style="text-align: center; padding:5px;"><a class="urlDisabled" id="lnkOtpResend"></a>
+						<span id="bracketLeft">(</span><span id="otpTimer"></span><span id="bracketRight">)</span></div>
+				</div>
+				<div class="eft_bottom">
+					<div class="eft_bottom_l">
+						<input type="button" class="btnBack btnGray" style="margin-left: 15px" onclick="OnClickLinkBack()" />
+					</div>
+					<div class="eft_bottom_r">
+						<input type="button" id="btnOtpValidate" disabled="disabled" class="btnNext btnGray" style="margin-right: 15px" onclick="OtpCodeConfirm()" />
+					</div>
+				</div>
+			</div>
+			<div id="DivLinkReply" style="display: none; float: left; width: 100%; border-top: 2px solid #003B7F;">
+				<div style="padding: 10px; text-align: center;">
+					<img id="imgLinkResult" style="width: 35px; margin-bottom:5px;" />
+					<br />
+					<span id="lblLinkResult" style="font-weight: bold;"></span>
+				</div>
+				<div style="padding:5px;"><span id="lblLinkReplyMsg"></span></div>
+				<div id="DivLinkReplyResult" style="display: none">
+					<div class="eft_item">
+						<div class="eft_item_l">
+							<span id="lblLinkReplyName"></span>:
+						</div>
+						<div class="eft_item_r">
+							<span id="lblLinkResultName"></span>
+						</div>
+					</div>
+					<div class="eft_item">
+						<div class="eft_item_l">
+							<span id="lblLinkReplyBankName"></span>:
+						</div>
+						<div class="eft_item_r">
+							<span id="lblLinkResultBankName"></span>
+						</div>
+					</div>
+					<div class="eft_item">
+						<div class="eft_item_l">
+							<span id="lblLinkReplyBankAc"></span>:
+						</div>
+						<div class="eft_item_r">
+							<span id="lblLinkResultBankAc"></span>
+						</div>
+					</div>
+					<div class="eft_item">
+						<div class="eft_item_l">
+							<span id="lblLinkReplyPhone"></span>:
+						</div>
+						<div class="eft_item_r">
+							<span id="lblLinkResultPhone"></span>
+						</div>
+					</div>
+					<div class="eft_item" id="DivLinkDefaultDeposit" style="display:none;">
+						<div class="eft_item_l">
+							<span id="lblLinkReplyDefaultDeposit"></span>:
+						</div>
+						<div class="eft_item_r">
+							$<span id="lblLinkResultDefaultDeposit"></span>
+						</div>
+					</div>
+					<div id="DivLinkRejectReason" class="eft_item" style="display: none;">
+						<div class="eft_item_l">
+							<span id="lblLinkReplyReject"></span>:
+						</div>
+						<div class="eft_item_r">
+							<span id="lblLinkResultReject"></span>
+						</div>
+					</div>
+					<div id="DivLinkReminder" class="eft_item" style="display: none; background-color: #FFF; padding: 10px 20px 5px 15px;">
+						<span id="lblLinkResultReminder"></span>
+					</div>
+					<div class="eft_bottom">
+						<div class="eft_bottom_l">&nbsp;
+						</div>
+						<div class="eft_bottom_r">
+							<input type="button" class="btnDone btnGray" style="margin-right: 15px" onclick="EftOnLoad(2)" />
+						</div>
+					</div>
+				</div>
+				<div id="DivLinkContent" style="display:none; background-color: #EEEEEE;">
+					<div style="padding:10px;">
+						<span id="lblLinkContent"></span>
+					</div>
+					<div class="eft_bottom">
+						<div class="eft_bottom_l">&nbsp;
+						</div>
+						<div class="eft_bottom_r">
+							<input type="button" class="btnDone btnGray" style="margin-right: 15px" onclick="EftOnLoad(0)" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="DivFpsBankList" style="float: left; width: 100%; border-top: 2px solid #003B7F; display: none">
+				<div class="eft_item">
+					<div style="padding:10px">
+						<span id="lbl_banklist_title"></span>
+					</div>
+				</div>
+				<div id="DivFpsTheList" style="padding:0px 10px 10px 10px; overflow-y:auto;">
+					<table id="dgBanklist" style="width:100%; border-spacing: 0px;">
+						<tr>
+							<td id="lblBankCode" class="eft_banklist_header" style="text-align: center;"></td>
+							<td id="lblBankName" class="eft_banklist_header"></td>
+						</tr>
+					</table>
+				</div>
+				<div class="eft_bottom">
+					<div class="eft_bottom_l">
+						<input type="button" class="btnBack btnGray" style="margin-left: 15px" onclick="BackFpsBankList()" />
+					</div>
+					<div class="eft_bottom_r">&nbsp;
+					</div>
+				</div>
+			</div>
+			<div id="DivPpsResult" style="float: left; width: 100%; border-top: 2px solid #003B7F; display: none">
+				<div style="padding: 10px; text-align: center;">
+					<img id="imgPpsResult" style="width: 40px;" />
+					<br />
+					<span id="lblPpsResult" style="font-weight: bold;"></span>
+				</div>
+				<div id="DivReplyPpsResult">
+					<div style="overflow-x: hidden; background-color: #D8E2EC; width: 100%; padding: 5px 0px 5px 0px;">
+						<span id="lblPpsResultSummary" style="padding-left: 15px; color: #05378E; font-weight: bold;">Online Deposit Summary</span>
+					</div>
+					<div class="eft_item">
+						<div class="eft_item_l">
+							<span id="lbl_ppsResult_txn_date"></span>:
+						</div>
+						<div class="eft_item_r">
+							<span id="lbl_ppsResult_txn_date_text"></span>
+						</div>
+					</div>
+					<div class="eft_item">
+						<div class="eft_item_l">
+							<span id="lbl_ppsResult_ref_no"></span>:
+						</div>
+						<div class="eft_item_r">
+							<span id="lbl_ppsResult_ref_no_text">
+						</div>
+					</div>
+					<div class="eft_item">
+						<div class="eft_item_l">
+							<span id="lbl_ppsResult_payment_no"></span>:
+						</div>
+						<div class="eft_item_r">
+							<span id="lbl_ppsResult_payment_no_text"></span>
+						</div>
+					</div>
+					<div class="eft_item">
+						<div class="eft_item_l">
+							<span id="lbl_ppsResult_trans_amount"></span>:
+						</div>
+						<div class="eft_item_r">
+							$<span id="lbl_ppsResult_trans_amount_text"></span>
+						</div>
+					</div>
+					<div class="eft_item">
+						<div class="eft_item_l">
+							<span id="lbl_ppsResult_result_msg"></span>:
+						</div>
+						<div class="eft_item_r">
+							<span id="lbl_ppsResult_result_msg_text"></span>
+						</div>
+					</div>
+				</div>
+				<div class="eft_bottom">
+					<div class="eft_bottom_l">&nbsp;
+					</div>
+					<div class="eft_bottom_r">
+						<input type="button" class="btnDone btnGray" style="margin-right: 15px" onclick="EftOnLoad(0)" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="divLogout" onkeydown="return onKeyDown(event, true, 'logout');" tabindex="-1">
+	<div style="background-color:#FFFFFF">
+		<iframe id="logoutFrame" border="0" marginWidth="0" marginHeight="0" src="" frameBorder="0" scrolling="no" style="width:758px; height:358px;"></iframe>
+	</div>
+	<div id="logoutCloseDiv">
+		<div id="logoutClose" onclick="OnClickCloseLogoutPopup();"></div>
+	</div>
+</div>
+
+<script type="text/javascript" src="/common/wa_tracker.js"></script>
+<script type="text/javascript" src="/info/include/wa/wa_tracker_config.js"></script>
+
+<div id="div_engine" style="position:absolute"></div>
+<iframe id="tFrame" style="display: none"></iframe>
+</body>
+</html> 

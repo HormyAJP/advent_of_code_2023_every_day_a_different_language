@@ -1,0 +1,171 @@
+// The Round Table
+digraph "round-table" {
+	zq [label="&zq"]
+	fd [label="%fd"]
+	gk [label="%gk"]
+	pp [label="%pp"]
+	ph [label="&ph"]
+	ss [label="%ss"]
+	dr [label="%dr"]
+	pl [label="%pl"]
+	qg [label="%qg"]
+	jh [label="&jh"]
+	nk [label="%nk"]
+	lm [label="%lm"]
+	lg [label="%lg"]
+	qm [label="&qm"]
+	fk [label="%fk"]
+	lr [label="%lr"]
+	hh [label="%hh"]
+	bf [label="%bf"]
+	sj [label="%sj"]
+	kb [label="%kb"]
+	jl [label="%jl"]
+	bs [label="%bs"]
+	kx [label="%kx"]
+	bl [label="%bl"]
+	cz [label="%cz"]
+	dd [label="&dd"]
+	db [label="%db"]
+	dc [label="&dc"]
+	jn [label="%jn"]
+	kl [label="%kl"]
+	qv [label="%qv"]
+	xm [label="%xm"]
+	nd [label="%nd"]
+	vq [label="%vq"]
+	bh [label="%bh"]
+	tx [label="&tx"]
+	ct [label="%ct"]
+	df [label="%df"]
+	fx [label="%fx"]
+	dj [label="%dj"]
+	fv [label="%fv"]
+	vj [label="%vj"]
+	pv [label="%pv"]
+	dg [label="%dg"]
+	zz [label="%zz"]
+	fc [label="%fc"]
+	ls [label="&ls"]
+	rx [label=rx]
+	vl [label="%vl"]
+	xr [label="%xr"]
+	kr [label="%kr"]
+	nz [label="&nz"]
+	ms [label="%ms"]
+	rt [label="%rt"]
+	zm [label="%zm"]
+	kf [label="%kf"]
+	mr [label="%mr"]
+	hq [label="%hq"]
+	broadcaster [label=broadcaster]
+	zq -> fd
+	zq -> gk
+	zq -> pp
+	zq -> ph
+	zq -> ss
+	zq -> dr
+	zq -> pl
+	fd -> gk
+	gk -> rt
+	pp -> hh
+	ph -> ls
+	ss -> zq
+	ss -> nd
+	dr -> fd
+	pl -> dr
+	qg -> jh
+	qg -> nk
+	jh -> zz
+	jh -> lr
+	jh -> vl
+	jh -> fc
+	jh -> nz
+	jh -> fk
+	jh -> qg
+	nk -> jh
+	nk -> vl
+	lm -> lg
+	lm -> qm
+	lg -> qm
+	lg -> ms
+	qm -> kb
+	qm -> jl
+	qm -> bs
+	qm -> kx
+	qm -> bl
+	qm -> cz
+	qm -> dd
+	fk -> lr
+	lr -> dg
+	hh -> fv
+	hh -> zq
+	bf -> sj
+	bf -> qm
+	sj -> qm
+	sj -> bl
+	kb -> qm
+	kb -> kx
+	jl -> cz
+	bs -> pv
+	kx -> jl
+	bl -> bs
+	cz -> bf
+	dd -> ls
+	db -> dc
+	db -> jn
+	dc -> tx
+	dc -> vq
+	dc -> ct
+	dc -> df
+	dc -> fx
+	jn -> dc
+	kl -> dc
+	kl -> qv
+	qv -> dc
+	qv -> db
+	xm -> jh
+	nd -> pl
+	nd -> zq
+	vq -> bh
+	vq -> dc
+	bh -> dc
+	bh -> ct
+	tx -> ls
+	ct -> fx
+	df -> mr
+	fx -> hq
+	dj -> zq
+	dj -> pp
+	fv -> vj
+	fv -> zq
+	vj -> zq
+	pv -> lm
+	pv -> qm
+	dg -> zz
+	dg -> jh
+	zz -> zm
+	fc -> fk
+	ls -> rx
+	vl -> fc
+	xr -> kr
+	xr -> jh
+	kr -> jh
+	kr -> xm
+	nz -> ls
+	ms -> qm
+	rt -> zq
+	rt -> dj
+	zm -> xr
+	zm -> jh
+	kf -> kl
+	kf -> dc
+	mr -> dc
+	mr -> kf
+	hq -> df
+	hq -> dc
+	broadcaster -> kb
+	broadcaster -> vq
+	broadcaster -> ss
+	broadcaster -> qg
+}

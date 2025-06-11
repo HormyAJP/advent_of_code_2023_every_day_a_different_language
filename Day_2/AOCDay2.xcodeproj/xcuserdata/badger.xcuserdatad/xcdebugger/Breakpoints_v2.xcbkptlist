@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0A1172D0-74B3-4B79-B946-000BCCD7E038"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B49CC32-D92C-4C70-A0F3-49FBB9036B3C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AdventOfCode2022Test/main.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "2B49CC32-D92C-4C70-A0F3-49FBB9036B3C - 8872d8d97de833c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "AdventOfCode2022Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/badger/dev/git/hormyajp/xcode_projects/AdventOfCode2022Test/AdventOfCode2022Test/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "135">
+               </Location>
+               <Location
+                  uuid = "2B49CC32-D92C-4C70-A0F3-49FBB9036B3C - 8872d8d97de8320b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "AdventOfCode2022Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/badger/dev/git/hormyajp/xcode_projects/AdventOfCode2022Test/AdventOfCode2022Test/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "162">
+               </Location>
+               <Location
+                  uuid = "2B49CC32-D92C-4C70-A0F3-49FBB9036B3C - 8872d8d97de832f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "AdventOfCode2022Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/badger/dev/git/hormyajp/xcode_projects/AdventOfCode2022Test/AdventOfCode2022Test/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "162">
+               </Location>
+               <Location
+                  uuid = "2B49CC32-D92C-4C70-A0F3-49FBB9036B3C - 8872d8d97de83294"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "AdventOfCode2022Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/badger/dev/git/hormyajp/xcode_projects/AdventOfCode2022Test/AdventOfCode2022Test/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "162">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "550B9220-4922-48B7-A37C-66182631B0FF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AdventOfCode2022Test/main.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "550B9220-4922-48B7-A37C-66182631B0FF - 8872d8d97de8338f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "AdventOfCode2022Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/badger/dev/git/hormyajp/xcode_projects/AdventOfCode2022Test/AdventOfCode2022Test/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "135">
+               </Location>
+               <Location
+                  uuid = "550B9220-4922-48B7-A37C-66182631B0FF - 8872d8d97de8338f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "AdventOfCode2022Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/badger/dev/git/hormyajp/xcode_projects/AdventOfCode2022Test/AdventOfCode2022Test/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "550B9220-4922-48B7-A37C-66182631B0FF - 8872d8d97de833c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "AdventOfCode2022Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/badger/dev/git/hormyajp/xcode_projects/AdventOfCode2022Test/AdventOfCode2022Test/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "135">
+               </Location>
+               <Location
+                  uuid = "550B9220-4922-48B7-A37C-66182631B0FF - 8872d8d97de832b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "AdventOfCode2022Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/badger/dev/git/hormyajp/xcode_projects/AdventOfCode2022Test/AdventOfCode2022Test/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "135">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7F9D7A6B-7A14-48A0-BB8A-E1440B8AAA4A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AdventOfCode2022Test/advent.s"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "7F9D7A6B-7A14-48A0-BB8A-E1440B8AAA4A - 57c77f17e2b8d3a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "foo"
+                  moduleName = "AdventOfCode2022Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/badger/dev/git/hormyajp/xcode_projects/AdventOfCode2022Test/AdventOfCode2022Test/advent.s"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "58">
+               </Location>
+               <Location
+                  uuid = "7F9D7A6B-7A14-48A0-BB8A-E1440B8AAA4A - 57c77f17e2b8d304"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "foo"
+                  moduleName = "AdventOfCode2022Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/badger/dev/git/hormyajp/xcode_projects/AdventOfCode2022Test/AdventOfCode2022Test/advent.s"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "53">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4B5C6CF1-3F38-4131-917B-A5527B12F28B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AdventOfCode2022Test/advent.s"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9A1A390A-C668-4C26-889A-5F44349BECA1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AdventOfCode2022Test/advent.s"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4218F892-D3C4-42E5-977D-6EC51B9A0F53"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AOCDay2/main.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "214"
+            endingLineNumber = "214"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "4218F892-D3C4-42E5-977D-6EC51B9A0F53 - 4ef27929451ffce3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "AOCDay2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/badger/dev/git/hormyajp/advent_of_code_2023_every_day_a_different_language/Day_2/AOCDay2/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "199"
+                  endingLineNumber = "199"
+                  offsetFromSymbolStart = "262">
+               </Location>
+               <Location
+                  uuid = "4218F892-D3C4-42E5-977D-6EC51B9A0F53 - 4ef27929451ffd02"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "AOCDay2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/badger/dev/git/hormyajp/advent_of_code_2023_every_day_a_different_language/Day_2/AOCDay2/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "200"
+                  endingLineNumber = "200"
+                  offsetFromSymbolStart = "262">
+               </Location>
+               <Location
+                  uuid = "4218F892-D3C4-42E5-977D-6EC51B9A0F53 - 4ef27929451fe2ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "AOCDay2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/badger/dev/git/hormyajp/advent_of_code_2023_every_day_a_different_language/Day_2/AOCDay2/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "213"
+                  endingLineNumber = "213"
+                  offsetFromSymbolStart = "262">
+               </Location>
+               <Location
+                  uuid = "4218F892-D3C4-42E5-977D-6EC51B9A0F53 - 4ef27929451fe332"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "AOCDay2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/badger/dev/git/hormyajp/advent_of_code_2023_every_day_a_different_language/Day_2/AOCDay2/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "216"
+                  endingLineNumber = "216"
+                  offsetFromSymbolStart = "262">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6BBA3B16-FF4F-448D-BEAE-CDB8F2760C39"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AOCDay2/main.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "parse_lines(lines, num_lines)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3698A4AE-CDAA-43ED-B214-B8FE2C042AC2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AOCDay2/main.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "3698A4AE-CDAA-43ED-B214-B8FE2C042AC2 - 4ef27929451ffef3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "AOCDay2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/badger/dev/git/hormyajp/advent_of_code_2023_every_day_a_different_language/Day_2/AOCDay2/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "183"
+                  endingLineNumber = "183"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "3698A4AE-CDAA-43ED-B214-B8FE2C042AC2 - 4ef27929451ffeac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "AOCDay2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/badger/dev/git/hormyajp/advent_of_code_2023_every_day_a_different_language/Day_2/AOCDay2/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "182"
+                  endingLineNumber = "182"
+                  offsetFromSymbolStart = "143">
+               </Location>
+               <Location
+                  uuid = "3698A4AE-CDAA-43ED-B214-B8FE2C042AC2 - 4ef27929451ffc7f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "AOCDay2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/badger/dev/git/hormyajp/advent_of_code_2023_every_day_a_different_language/Day_2/AOCDay2/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "195"
+                  endingLineNumber = "195"
+                  offsetFromSymbolStart = "143">
+               </Location>
+               <Location
+                  uuid = "3698A4AE-CDAA-43ED-B214-B8FE2C042AC2 - 4ef27929451ffcdc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "AOCDay2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/badger/dev/git/hormyajp/advent_of_code_2023_every_day_a_different_language/Day_2/AOCDay2/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "198"
+                  endingLineNumber = "198"
+                  offsetFromSymbolStart = "143">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "568D1308-4FF6-4362-B746-803101F7562A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AOCDay2/main.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "parse_lines(lines, num_lines)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "568D1308-4FF6-4362-B746-803101F7562A - fcbdb53c36732c2b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "parse_lines"
+                  moduleName = "AOCDay2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/badger/dev/git/hormyajp/advent_of_code_2023_every_day_a_different_language/Day_2/AOCDay2/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "568D1308-4FF6-4362-B746-803101F7562A - fcbdb53c36732c0a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "parse_lines"
+                  moduleName = "AOCDay2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/badger/dev/git/hormyajp/advent_of_code_2023_every_day_a_different_language/Day_2/AOCDay2/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DBA900FD-58EB-4ACE-A366-3434753B3A8F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AOCDay2/main.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "parse_draw(draw)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "DBA900FD-58EB-4ACE-A366-3434753B3A8F - 8e797239a79f916f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "parse_draw"
+                  moduleName = "AOCDay2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/badger/dev/git/hormyajp/advent_of_code_2023_every_day_a_different_language/Day_2/AOCDay2/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110"
+                  offsetFromSymbolStart = "290">
+               </Location>
+               <Location
+                  uuid = "DBA900FD-58EB-4ACE-A366-3434753B3A8F - 8e797239a79f91c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "parse_draw"
+                  moduleName = "AOCDay2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/badger/dev/git/hormyajp/advent_of_code_2023_every_day_a_different_language/Day_2/AOCDay2/main.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "308">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "77BF09A3-53B6-43CA-96F8-62192047338C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AOCDay2/main.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "parse_draw(draw)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

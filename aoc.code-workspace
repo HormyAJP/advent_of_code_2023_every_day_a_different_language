@@ -44,7 +44,44 @@
 		},
 		{
 			"path": "Day_13",
+		},
+		{
+			"path": "Day_14",
+		},
+		{
+			"path": "Day_15",
+		},
+		{
+			"path": "Day_16",
+		},
+		{
+			"path": "Day_17",
+		},
+		{
+			"path": "Day_18",
+		},
+		{
+			"path": "Day_19",
+		},
+		{
+			"path": "Day_20",
+		},
+		{
+			"path": "Day_21",
+		},
+		{
+			"path": "Day_22",
+		},
+		{
+			"path": "Day_23",
+		},
+		{
+			"path": "Day_24",
+		},
+		{
+			"path": "Day_25",
 		}
+
 	],
 	"settings": {
 		"workbench.editor.labelFormat": "medium"

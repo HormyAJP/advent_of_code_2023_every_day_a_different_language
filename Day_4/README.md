@@ -1,0 +1,1 @@
+Compile and run the code using `cobc -x -o aoc main.cbl && ./aoc`.
